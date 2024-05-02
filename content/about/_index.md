@@ -15,8 +15,8 @@ Hi! I'm Dison, a Bsc Computer Science graduate from chuka university, _class 0f 
 **EXPERIENCE**<br/>
 
 _Davis and Shirtliff— MERN Developer(Internship)_.<br/>  
-January 2019 - March 2020.<br/>
-● Fixed bugs and problems across the entire codebase efficiently which helped us achieve 99.9% application uptime.<br/>
+January 2019 - March 2020<br/>
+● Fixed bugs and problems across the entire codebase efficiently which helped us achieve 99.9% application uptime<br/>
 ● Timely reviewed pull requests for different team members, ensuring quality code, business requirements correctness, and adherence to coding style. The timely reviews helped us in achieving project timelines.<br/>
 ● Refactored codebase to support lazy loading, resulting in a 10% improvement in application loading speed.<br/>
 ● Implemented a CI/CD workflow using jenkins actions which helped reduce time spent on manual tests, resulting in a boost in team productivity.<br/>
