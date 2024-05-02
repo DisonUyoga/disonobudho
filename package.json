@@ -1,0 +1,21 @@
+{
+  "name": "hugo-developer-portfolio",
+  "version": "1.0.0",
+  "description": "![GitHub](https://img.shields.io/github/license/samrobbins85/hugo-developer-portfolio?style=for-the-badge)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "hugo server --gc --disableFastRender",
+    "dev:drafts": "hugo server --gc --disableFastRender --buildFuture --buildDrafts",
+    "build": "hugo --gc --cleanDestinationDir --minify",
+    "start": "hugo server --gc --disableFastRender --renderStaticToDisk --cleanDestinationDir",
+    "start:production": "hugo server --gc --disableFastRender --renderStaticToDisk --cleanDestinationDir --environment production --minify",
+    "npm-check": "npm-check -u"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hugo-installer": "^4.0.1",
+    "npm-check": "^6.0.1"
+  }
+}
