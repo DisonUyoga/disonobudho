@@ -9,7 +9,7 @@
   <div class="uk-container">
     <div class="uk-flex-center" uk-grid>
       <div class="uk-width-1-2 uk-width-1-3@s">
-        <img src="{{.Params.AuthorImage | absURL }}" alt="author">
+        <img src="{{ `images` | relURL }}/{{ .Site.Params.profile }}" alt="author">
       </div>
       <div class="uk-width-expand@m">
         {{ .Content }}

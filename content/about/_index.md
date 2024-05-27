@@ -3,7 +3,7 @@ title: "About"
 date: 2019-05-12T12:14:34+06:00
 description: "This is meta description."
 author: "Dison Obudho"
-authorImage: "https://drive.google.com/file/d/1wFgr5-jX90WL5UuO3MawDccMpDpW-qLI/view?usp=drive_link"
+authorImage: "images/about/profile.jpg"
 ---
 
 **Phone**: +254702122421.<br/>  

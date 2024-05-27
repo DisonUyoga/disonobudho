@@ -55,6 +55,7 @@ home = "Home"
 # Meta data
 description = "Website developed by Dison Obudho"
 author = "Dison Obudho"
+profile = "profile.jpg"
 
 
   [params.contact]
