@@ -11,7 +11,7 @@ authorImage: "images/about/profile.jpg"
 
 **SUMMARY**<br/>
 
-Hi! I'm Dison, a Bsc Computer Science graduate from chuka university, _class 0f 2018_. I am a self- taught developer always pushing myself beyond limits to dive deep into concepts and understand fine details. I can efficiently work with existing code base with remarkable debuging skills acculated through experience and curiosity. I have got hands on experience working with hugo, Reactjs, Nextjs, React Native, vue, Django Rest Framework, Spring Boot, expressjs, nodejs, redux, tanstack/react-query, Redux,prisma, SWR, tanStack/react-query, figma, kubernetes and docker. Also, I can write tests with jest, react testing library , selenium and pytest. I am experienced with Amazon Web Services (aws) including working with Jenkins for Continous Intergration and Continuous Delivery (CI/CL).
+Hi! I'm Dison, a Bsc Computer Science graduate from chuka university, _class 0f 2018_. I am a self- taught developer always pushing myself beyond limits to dive deep into concepts and understand fine details. I can efficiently work with existing code base with remarkable debuging skills accumulated through experience and curiosity. I have got hands on experience working with hugo, Reactjs, Nextjs, React Native, vue, Django Rest Framework, Spring Boot, expressjs, nodejs, redux, tanstack/react-query, Redux,prisma, SWR, tanStack/react-query, figma, kubernetes and docker. Also, I can write tests with jest, react testing library , selenium and pytest. I am experienced with Amazon Web Services (aws) including working with Jenkins for Continous Intergration and Continuous Delivery (CI/CL).
 
 **EXPERIENCE**
 
