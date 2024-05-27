@@ -6,14 +6,14 @@
     <description>Recent content in Blog on Dison Obudho</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 31 Dec 2019 12:14:34 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2024 12:14:34 +0600</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Making a new Website</title>
+      <title>Frontend Developer Assessment Project</title>
       <link>http://localhost:1313/blog/first-blog/</link>
-      <pubDate>Tue, 31 Dec 2019 12:14:34 +0600</pubDate>
+      <pubDate>Wed, 15 May 2024 12:14:34 +0600</pubDate>
       <guid>http://localhost:1313/blog/first-blog/</guid>
-      <description>For a long time this website has had a couple of links to contact me, but those days are over.&#xA;Now I have a brand new Hugo website with a custom written theme complete with&#xA;A homepage with more social links, and description of my skills An about page with description of who I am A portfolio page to showcase all my projects A blog Why Hugo? The first question is why a site builder?</description>
+      <description>There were a total of 5 questions involved in this react interview. The time limit for the interview was 8 hours. However, finishing all the questions was not mandatory. Near Earth Object Web Service(Neows) API was used to generate data for the UI.&#xA;The assesment was based on:&#xA;Appearance and UX of your web app Maintainability and Quality of your code General approach to solve problems Use of dependencies other than required ones Your own time management and prioritisation Required Dependencies were: ✔ node16+ ✔ npm8+ ✔ react (latest) ✔ typescript (latest) ✔ github ✔ axios and react-query ( https://react-query.</description>
     </item>
   </channel>
 </rss>

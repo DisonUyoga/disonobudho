@@ -20,10 +20,10 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" property="og:description" content="My first blog, introducing my new website">
+  <meta name="description" property="og:description" content="This react interview has enabled me to show case my typescript/react skills">
   <meta name="image" property="og:image" content="/">
   <meta name="author" content="Dison Obudho">
-  <meta name="generator" content="Hugo 0.125.4">
+  <meta name="generator" content="Hugo 0.126.1">
 
   <!-- plugins -->
   
@@ -248,31 +248,72 @@
 
 <section>
   <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
-    <h1 class="uk-text-center uk-heading-medium">Making a new Website</h1>
-    <p class="uk-text-center uk-text-lead">My first blog, introducing my new website</p>
-    <p class="uk-text-center">Published on Dec 31, 2019</p>
-    <p class="uk-text-center">Reading time: 1 minutes.</p>
+    <h1 class="uk-text-center uk-heading-medium">Frontend Developer Assessment Project</h1>
+    <p class="uk-text-center uk-text-lead">This react interview has enabled me to show case my typescript/react skills</p>
+    <p class="uk-text-center">Published on May 15, 2024</p>
+    <p class="uk-text-center">Reading time: 2 minutes.</p>
     
 
     <hr class="full-width">
     
 
     <div class="content">
-      <p>For a long time this website has had a couple of links to contact me, but those days are over.</p>
-<p>Now I have a brand new Hugo website with a custom written theme complete with</p>
+      <p>There were a total of 5 questions involved in this react interview. The time limit for the interview was 8 hours. However, finishing all the questions was not mandatory. <a href="https://api.nasa.gov/#asteroids-neows">Near Earth Object Web Service(Neows)</a> API was used to generate data for the UI.</p>
+<p>The assesment was based on:</p>
 <ul>
-<li>A homepage with more social links, and description of my skills</li>
-<li>An about page with description of who I am</li>
-<li>A portfolio page to showcase all my projects</li>
-<li>A blog</li>
+<li>Appearance and UX of your web app</li>
+<li>Maintainability and Quality of your code</li>
+<li>General approach to solve problems</li>
+<li>Use of dependencies other than required ones</li>
+<li>Your own time management and prioritisation</li>
 </ul>
-<h3 id="why-hugo">Why Hugo?</h3>
-<p>The first question is why a <em>site builder</em>? I&rsquo;m competent at web development, why not just write it all myself? The markdown processing makes it much easier to just write words, not having to think about the formatting, and if I&rsquo;m going to blog often, then I&rsquo;ll need that.</p>
-<p>Next it gets to why Hugo? why not Jekyll or any of the other vast array of site builders? The answer to that is sadly rather boring, it had a theme I liked the look of, in particular <a href="https://github.com/themefisher/kross-hugo">this theme</a>, and it had an MIT license, so I could publish and tweak it as much as I wanted to.</p>
-<h3 id="why-start-blogging">Why start blogging?</h3>
-<p>A very good question. For one it would allow me to showcase my skills more than just a portfolio would, not everything fits under the umbrella of a portfolio, but I can blog about whatever I want. Secondly is to act as a reminder of how I do things, if I blog my process when I do technical things, I&rsquo;ll always be able to look back and see how I did it if I ever have to do it again.</p>
-<h3 id="so-what-can-i-expect-to-see-in-the-blog">So what can I expect to see in the blog?</h3>
-<p>The current plan is for the vast majority of posts to be technical guides on how to do things, but there might be some variety if I want to blog about events.</p>
+<h3 id="required-dependencies-were">Required Dependencies were:</h3>
+<p>✔ node16+
+✔ npm8+
+✔ react (latest)
+✔ typescript (latest)
+✔ github
+✔ <code>axios</code> and <code>react-query</code> ( <a href="https://react-query.tanstack.com/overview">https://react-query.tanstack.com/overview</a> )
+✔ all code is written in <code>.ts</code> or <code>.tsx</code></p>
+<h3 id="tasks">Tasks</h3>
+<ol>
+<li>
+<p>Create a spreadsheet that shows a list of up to 10 today&rsquo;s most recent near-earth objects.
+Each row represents one asteroid. The list is sorted by time of the close approach. The latest
+close approach is shown first.
+The spreadsheet features the following columns.- Time: Date and time of the close approach- Asteroid name: Name of the asteroid- Potential Hazard: Is it a potentially hazardous asteroid? (yes/no)- Estimated diameter: Maximum estimated diameter of the asteroid in meters rounded- Miss distance: Distance by which asteroid missed earth in kilometers rounded- Velocity: Relative velocity of asteroid in kilometers per hour rounded
+Remember to use react-query to implement the query.
+Refer to the NeoWs API docs!.</p>
+</li>
+<li>
+<p>Let&rsquo;s extend the previously created spreadsheet. We want to be able to select a date range to
+show asteroids of that date range. To allow this, make two pickers for start date and end date.
+Also, make a &ldquo;today&rdquo; button that automatically selects today as the date range. By default, show
+today&rsquo;s most recent objects as before.
+Whenever a new date is selected, the new data is fetched automatically.</p>
+</li>
+<li>
+<p>In the previous task, we showed only up to 10 rows. Since now, our table is able to show
+many more rows, its time to introduce pagination. Paginate your spreadsheet to show 10 results
+with pagination.
+Note: Data doesn&rsquo;t have to be re-fetched when changing pages.</p>
+</li>
+<li>
+<p>Add another column to the table which allows a user to write a note to themselves about an
+asteroid. This note is persisted locally on the user&rsquo;s machine. Whenever data is fetched, show
+the note contents automatically. If no note is found for the row, show a blank field.</p>
+</li>
+<li>
+<p>Use react-query to cache the results of each query based on the start and end dates to speed
+up loading when browsing different dates.</p>
+</li>
+<li>
+<p>Based on the data from the spreadsheet, create a bar chart where the x axis shows individual
+asteroids, and the y axis shows their velocity.</p>
+</li>
+</ol>
+<h3 id="complete-project-code">Complete Project Code</h3>
+<p><a href="https://github.com/DisonUyoga/neosAPI.git">neowsAPI Complete Project</a></p>
 
     </div>
   </div>

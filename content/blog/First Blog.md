@@ -1,30 +1,57 @@
 ---
-title: "Making a new Website"
-date: 2019-12-31T12:14:34+06:00
-description: "My first blog, introducing my new website"
-author: "Sam Robbins"
+title: "Frontend Developer Assessment Project"
+date: 2024-05-15T12:14:34+06:00
+description: "This react interview has enabled me to show case my typescript/react skills"
+author: "Dison Obudho"
 type: "post"
 ---
 
-For a long time this website has had a couple of links to contact me, but those days are over.
+There were a total of 5 questions involved in this react interview. The time limit for the interview was 8 hours. However, finishing all the questions was not mandatory. [Near Earth Object Web Service(Neows)](https://api.nasa.gov/#asteroids-neows) API was used to generate data for the UI.
 
-Now I have a brand new Hugo website with a custom written theme complete with
+The assesment was based on:
 
-- A homepage with more social links, and description of my skills
-- An about page with description of who I am
-- A portfolio page to showcase all my projects
-- A blog
+- Appearance and UX of your web app
+- Maintainability and Quality of your code
+- General approach to solve problems
+- Use of dependencies other than required ones
+- Your own time management and prioritisation
 
-### Why Hugo?
+### Required Dependencies were:
 
-The first question is why a _site builder_? I'm competent at web development, why not just write it all myself? The markdown processing makes it much easier to just write words, not having to think about the formatting, and if I'm going to blog often, then I'll need that.
+✔ node16+
+✔ npm8+
+✔ react (latest)
+✔ typescript (latest)
+✔ github
+✔ `axios` and `react-query` ( https://react-query.tanstack.com/overview )
+✔ all code is written in `.ts` or `.tsx`
 
-Next it gets to why Hugo? why not Jekyll or any of the other vast array of site builders? The answer to that is sadly rather boring, it had a theme I liked the look of, in particular [this theme](https://github.com/themefisher/kross-hugo), and it had an MIT license, so I could publish and tweak it as much as I wanted to.
+### Tasks
 
-### Why start blogging?
+1. Create a spreadsheet that shows a list of up to 10 today's most recent near-earth objects.
+   Each row represents one asteroid. The list is sorted by time of the close approach. The latest
+   close approach is shown first.
+   The spreadsheet features the following columns.- Time: Date and time of the close approach- Asteroid name: Name of the asteroid- Potential Hazard: Is it a potentially hazardous asteroid? (yes/no)- Estimated diameter: Maximum estimated diameter of the asteroid in meters rounded- Miss distance: Distance by which asteroid missed earth in kilometers rounded- Velocity: Relative velocity of asteroid in kilometers per hour rounded
+   Remember to use react-query to implement the query.
+   Refer to the NeoWs API docs!.
 
-A very good question. For one it would allow me to showcase my skills more than just a portfolio would, not everything fits under the umbrella of a portfolio, but I can blog about whatever I want. Secondly is to act as a reminder of how I do things, if I blog my process when I do technical things, I'll always be able to look back and see how I did it if I ever have to do it again.
+2. Let's extend the previously created spreadsheet. We want to be able to select a date range to
+   show asteroids of that date range. To allow this, make two pickers for start date and end date.
+   Also, make a "today" button that automatically selects today as the date range. By default, show
+   today's most recent objects as before.
+   Whenever a new date is selected, the new data is fetched automatically.
+3. In the previous task, we showed only up to 10 rows. Since now, our table is able to show
+   many more rows, its time to introduce pagination. Paginate your spreadsheet to show 10 results
+   with pagination.
+   Note: Data doesn't have to be re-fetched when changing pages.
+4. Add another column to the table which allows a user to write a note to themselves about an
+   asteroid. This note is persisted locally on the user's machine. Whenever data is fetched, show
+   the note contents automatically. If no note is found for the row, show a blank field.
+5. Use react-query to cache the results of each query based on the start and end dates to speed
+   up loading when browsing different dates.
+6. Based on the data from the spreadsheet, create a bar chart where the x axis shows individual
+   asteroids, and the y axis shows their velocity.
 
-### So what can I expect to see in the blog?
+### Complete Project Code
 
-The current plan is for the vast majority of posts to be technical guides on how to do things, but there might be some variety if I want to blog about events.
+[neowsAPI Complete Project](https://github.com/DisonUyoga/neosAPI.git)

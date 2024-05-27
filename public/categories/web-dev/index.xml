@@ -6,21 +6,14 @@
     <description>Recent content in Web-Dev on Dison Obudho</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 19 Jun 2020 23:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2024 23:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/web-dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo Portfolio Website</title>
-      <link>http://localhost:1313/portfolio/hugo-portfolio-website/</link>
-      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/hugo-portfolio-website/</guid>
-      <description>I created my portfolio website using Hugo and UIKit, it serves as an online resume containing all my work.&#xA;This has been created as a theme so that others can use and adapt it.&#xA;Sections Homepage The homepage provides the basic information about you, including links to social media, skills you have, things you&amp;rsquo;ve done and your education. This page makes good use of UIKit grid and cards for organising all the information and ensuring it is responsive to work on mobile devices.</description>
-    </item>
-    <item>
-      <title>Team project without GitHub</title>
+      <title>Frontend Developer Assessment Project</title>
       <link>http://localhost:1313/portfolio/example-team-no-github/</link>
-      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 May 2024 23:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/example-team-no-github/</guid>
-      <description>This is some content</description>
+      <description>Project Description There were a total of 5 questions involved in this react interview. The time limit for the interview was 8 hours. However, finishing all the questions was not mandatory. Near Earth Object Web Service(Neows) API was used to generate data for the UI.&#xA;The assesment was based on:&#xA;Appearance and UX of your web app Maintainability and Quality of your code General approach to solve problems Use of dependencies other than required ones Your own time management and prioritisation Required Dependencies were: ✔ node16+ ✔ npm8+ ✔ react (latest) ✔ typescript (latest) ✔ github ✔ axios and react-query ( https://react-query.</description>
     </item>
   </channel>
 </rss>
