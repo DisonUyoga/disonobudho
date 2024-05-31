@@ -114,7 +114,7 @@ In the example site, the base information looks as follows
 ```toml
 baseURL = "http://example.com" # The URL of your site
 languageCode = "en-gb" # The language you want to display the site in
-title = "Sam Robbins" # The title you want to appear in the address bar
+title = "Dison Obudho" # The title you want to appear in the address bar
 theme = "hugo-developer-portfolio" # The theme, don't change this
 ```
 
