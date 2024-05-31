@@ -5,7 +5,7 @@ date = 2023-11-19T23:00:00Z
 description = "FullStack Responsive Ecommerce website with React and Django Rest"
 github = ["https://github.com/DisonUyoga/Advance-Ecommerce-Furniture-site.git", "https://github.com/DisonUyoga/Advanced-ecommerce-furniture-site.git"]
 image = "https://cdn.svgporn.com/logos/react.svg"
-title = "Responsive Ecommerce Website"
+title = "FullStack Responsive Ecommerce Website"
 type = "post"
 [[tech]]
 logo = "https://cdn.svgporn.com/logos/react.svg"
