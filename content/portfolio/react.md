@@ -1,7 +1,7 @@
 +++
 categories = ["web-dev"]
 coders = []
-date = 2020-06-19T23:00:00Z
+date = 2023-11-19T23:00:00Z
 description = "Responsive Ecommerce website"
 github = ["https://github.com/DisonUyoga/Advance-Ecommerce-Furniture-site.git"]
 image = "https://cdn.svgporn.com/logos/react.svg"
@@ -51,14 +51,14 @@ The following depencies were used in this project:
 
 ### Homepage
 
-![Homepage Screenshot](https://res-console.cloudinary.com/dfjpdzsin/media_explorer_thumbnails/fe91837d84272623c2804fd387183e13/detailed "Homepage Screenshot")
-![Homepage Screenshot](https://res-console.cloudinary.com/dfjpdzsin/media_explorer_thumbnails/1e17890ab957f51bf8e0cfa70e6e4904/detailed "Homepage Screenshot")
+![Homepage Screenshot](https://res.cloudinary.com/dfjpdzsin/image/upload/homepage_xyk6it.png "Homepage Screenshot")
+![Homepage](https://res.cloudinary.com/dfjpdzsin/image/upload/v1717225383/mobileScreenhomepage_ovhcpn.png "Homepage Screenshot")
 
 I have used the power of useRef and useState react hooks and pure css to develop a responsive navbar. To optimize user experience, I have used css sticky property to ensure easy user navigation. I have used @keyframes with raw css to create beautiful animation in the navbar.
 
 ### Shop
 
-![Shop Screenshot](https://res-console.cloudinary.com/dfjpdzsin/media_explorer_thumbnails/f34d84156f91cad537d0d24262312894/detailed "Shop Screenshot")
+![Shop Screenshot](https://res.cloudinary.com/dfjpdzsin/image/upload/v1717222935/mobileshop_wi5e65.png "Shop Screenshot")
 
 The main focus in this page is to optimize user experience by establishing powerfull search engine using simple javascript code. the main methods used are:
 
@@ -72,13 +72,13 @@ Howerver, I managed to achieve this using redux to maintain state
 
 ### Card
 
-![Card Screenshot](https://res-console.cloudinary.com/dfjpdzsin/media_explorer_thumbnails/8c6378e1905d3e0de183632ffb21cd34/detailed "Card Screenshot")
+![Card Screenshot](https://res.cloudinary.com/dfjpdzsin/image/upload/v1717222907/homepagecard_j6pcvf.png "Card Screenshot")
 
 This card is bult with pure css, `framer-motion` and remixicons to create beatiful animation when hovering. The UI is higly responsive.
 
 ### Cart
 
-![](https://res-console.cloudinary.com/dfjpdzsin/media_explorer_thumbnails/578cec3dedbf738c7a2cf559a389893a/detailed)
+![](https://res.cloudinary.com/dfjpdzsin/image/upload/v1717222773/homecart_zv9lce.png)
 
 The cart automatically calculate the total amount of cart. Items can also be deleted from the cart. More importantly. Raw css has been used to make the UI highly responsive
 
