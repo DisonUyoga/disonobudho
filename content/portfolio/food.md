@@ -5,7 +5,7 @@ date = 2023-11-19T23:00:00Z
 description = "FullStack Responsive Food Delivery website with React and Django Rest"
 github = ["https://github.com/DisonUyoga/food_delivery_ecommerce.git", "https://github.com/DisonUyoga/food_backend.git"]
 image = "https://cdn.svgporn.com/logos/react.svg"
-title = "FullStack Responsive food Delivery Website"
+title = "FullStack Responsive Food Delivery Website"
 type = "post"
 [[tech]]
 logo = "https://cdn.svgporn.com/logos/react.svg"
