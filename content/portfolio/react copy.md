@@ -96,11 +96,11 @@ npm run dev
 ## Django Rest
 
 ```bash
-git clone https://github.com/DisonUyoga/Advanced-ecommerce-furniture-site.git
+git clone https://github.com/DisonUyoga/gym-backend.git
 ```
 
 ```bash
-cd Advanced-ecommerce-furniture-site
+cd gym-backend
 ```
 
 ```bash
