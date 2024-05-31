@@ -12,6 +12,10 @@ name = "Nextjs"
 url = "https://gohugo.io/"
 +++
 
+### Pulic Link to the site:
+
+[neowsApI](https://neos-api.vercel.app/)
+
 ### Project Description
 
 There were a total of 5 questions involved in this react interview. The time limit for the interview was 8 hours. However, finishing all the questions was not mandatory. [Near Earth Object Web Service(Neows)](https://api.nasa.gov/#asteroids-neows) API was used to generate data for the UI.
