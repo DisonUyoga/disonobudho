@@ -18,6 +18,23 @@ url = "https://gohugo.io/"
 
 The main objective of this project was to enhance user experience by establishing cart consistency (marging cart when not logged in and when a user logs in). When a user shops without logging in, and later decides to sign in, and either continue shopping or proceed to checkout, the cart logic should ensure that the user does not start from scratch after login into the site.
 
+### Libraries used:
+- @auth/prisma-adapter,
+- @prisma/client,
+- daisyui,
+- eslint-config-prettier,
+- mongoose,
+- next,
+- next-auth,
+- prettier,
+- prettier-plugin-tailwindcss,
+- prisma,
+- react,
+- react-dom,
+- react-hot-toast,
+- react-icons,
+   zod
+
 ### Significance
 
 Merging a user's cart when they log in to an eCommerce website ensures a seamless and convenient shopping experience. Here are several reasons why this practice is beneficial:
