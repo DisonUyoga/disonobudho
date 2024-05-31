@@ -1,77 +1,61 @@
 +++
 categories = ["web-dev"]
 coders = ["disonobudho"]
-date = 2024-05-15T23:00:00Z
-description = "Frontend Developer Assessment Project"
-image = "https://cdn.svgporn.com/logos/react.svg"
-title = "Frontend Developer Assessment Project"
+date = 2023-10-15T23:00:00Z
+description = "Nextjs 14 Ecommerce Project"
+image = "https://cdn.svgporn.com/logos/nextjs.svg"
+title = "Full Stack Nextjs 14 App"
 type = "post"
 [[tech]]
-logo = "https://cdn.svgporn.com/logos/react.svg"
-name = "Hugo"
+logo = "https://cdn.svgporn.com/logos/nextjs.svg"
+name = "Nextjs"
 url = "https://gohugo.io/"
 +++
 
+[Project Code](https://github.com/DisonUyoga/nextjs-advanced-ecommerce.git)
+
 ### Project Description
 
-There were a total of 5 questions involved in this react interview. The time limit for the interview was 8 hours. However, finishing all the questions was not mandatory. [Near Earth Object Web Service(Neows)](https://api.nasa.gov/#asteroids-neows) API was used to generate data for the UI.
+The main objective of this project was to enhance user experience by establishing cart consistency (marging cart when not logged in and when a user logs in). When a user shops without logging in, and later decides to sign in, and either continue shopping or proceed to checkout, the cart logic should ensure that the user does not start from scratch after login into the site.
 
-The assesment was based on:
+### Significance
 
-- Appearance and UX of your web app
-- Maintainability and Quality of your code
-- General approach to solve problems
-- Use of dependencies other than required ones
-- Your own time management and prioritisation
+Merging a user's cart when they log in to an eCommerce website ensures a seamless and convenient shopping experience. Here are several reasons why this practice is beneficial:
 
-### Required Dependencies were:
+`Improved User Experience`:
 
-✔ node16+
-✔ npm8+
-✔ react (latest)
-✔ typescript (latest)
-✔ github
-✔ `axios` and `react-query` ( https://react-query.tanstack.com/overview )
-✔ all code is written in `.ts` or `.tsx`
+**Continuity**: Users often start adding items to their cart while browsing without logging in. Merging the carts ensures that they don’t lose their selections when they decide to log in or create an account, providing a smooth and uninterrupted shopping experience.
 
-### Tasks
+**Convenience**: It saves users from the hassle of having to add items again, which can be frustrating and time-consuming.
 
-1. Create a spreadsheet that shows a list of up to 10 today's most recent near-earth objects.
-   Each row represents one asteroid. The list is sorted by time of the close approach. The latest
-   close approach is shown first.
-   The spreadsheet features the following columns.- Time: Date and time of the close approach- Asteroid name: Name of the asteroid- Potential Hazard: Is it a potentially hazardous asteroid? (yes/no)- Estimated diameter: Maximum estimated diameter of the asteroid in meters rounded- Miss distance: Distance by which asteroid missed earth in kilometers rounded- Velocity: Relative velocity of asteroid in kilometers per hour rounded
-   Remember to use react-query to implement the query.
-   Refer to the NeoWs API docs!.
+`Increased Sales`:
 
-2. Let's extend the previously created spreadsheet. We want to be able to select a date range to
-   show asteroids of that date range. To allow this, make two pickers for start date and end date.
-   Also, make a "today" button that automatically selects today as the date range. By default, show
-   today's most recent objects as before.
-   Whenever a new date is selected, the new data is fetched automatically.
-3. In the previous task, we showed only up to 10 rows. Since now, our table is able to show
-   many more rows, its time to introduce pagination. Paginate your spreadsheet to show 10 results
-   with pagination.
-   Note: Data doesn't have to be re-fetched when changing pages.
-4. Add another column to the table which allows a user to write a note to themselves about an
-   asteroid. This note is persisted locally on the user's machine. Whenever data is fetched, show
-   the note contents automatically. If no note is found for the row, show a blank field.
-5. Use react-query to cache the results of each query based on the start and end dates to speed
-   up loading when browsing different dates.
-6. Based on the data from the spreadsheet, create a bar chart where the x axis shows individual
-   asteroids, and the y axis shows their velocity.
+**Reduced Abandonment**: A seamless transition from guest to logged-in state reduces the chances of cart abandonment. Users are more likely to complete their purchase if their selected items are retained.
 
-### Complete Project Code
+**Encourages Account Creation**: Knowing that their cart will be preserved may encourage more users to create accounts, which can help in building a customer database for marketing and personalized services.
 
-[neowsAPI Complete Project](https://github.com/DisonUyoga/neosAPI.git)
+`Personalization`:
 
-### Project Implementation
+**Tailored Experience**: When carts are merged, the eCommerce platform can provide personalized recommendations and offers based on the combined data from both the guest and logged-in states.
 
-The libraries used in the project are:
+**Consistent Tracking**: It allows for better tracking of user behavior and preferences, which can be used to enhance the shopping experience through personalized marketing and promotions.
 
-- chakra-ui/react
-- tanstack/react-query
-- axios
-- emotion/react
-- tanstack/react-table
+`Data Integration`:
 
-The project relied heavily on tanstack/react-table to generate headless UI. I used Typescript to create complex data types that included index signatures.
+**Unified Data**: Merging carts ensures that all user interactions are recorded under a single user profile, providing a comprehensive view of the customer’s shopping behavior and preferences.
+
+**Analytics**: It improves the accuracy of analytics and reporting, enabling better decision-making regarding inventory, marketing strategies, and customer service.
+
+`Enhanced Functionality`:
+
+**Wishlist Integration**: Items added to the cart while logged out can be easily moved to a wishlist when the user logs in, providing more flexibility in managing their desired products.
+
+**Cross-Device Shopping**: Users often browse on multiple devices. Merging carts ensures that they can start shopping on one device and complete the purchase on another without losing their cart items.
+
+`Operational Efficiency`:
+
+**Simplified Management**: It simplifies the backend processes for managing carts and inventory. There’s no need to handle separate carts for logged-in and guest users, reducing complexity and potential errors.
+
+**Stock Management**: Helps in maintaining accurate inventory levels, as duplicate carts can lead to discrepancies in stock availability.
+
+In summary, merging a guest user's cart with their logged-in cart enhances the user experience, encourages account creation, increases sales potential, enables better personalization, and streamlines eCommerce operations.

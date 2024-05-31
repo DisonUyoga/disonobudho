@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/portfolio/example-team-no-github/</guid>
       <description>Project Description There were a total of 5 questions involved in this react interview. The time limit for the interview was 8 hours. However, finishing all the questions was not mandatory. Near Earth Object Web Service(Neows) API was used to generate data for the UI.&#xA;The assesment was based on:&#xA;Appearance and UX of your web app Maintainability and Quality of your code General approach to solve problems Use of dependencies other than required ones Your own time management and prioritisation Required Dependencies were: ✔ node16+ ✔ npm8+ ✔ react (latest) ✔ typescript (latest) ✔ github ✔ axios and react-query ( https://react-query.</description>
     </item>
+    <item>
+      <title>Full Stack Nextjs 14 App</title>
+      <link>http://localhost:1313/portfolio/example-team-no-github-copy/</link>
+      <pubDate>Sun, 15 Oct 2023 23:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/example-team-no-github-copy/</guid>
+      <description>Project Code&#xA;Project Description The main objective of this project was to enhance user experience by establishing cart consistency (marging cart when not logged in and when a user logs in). When a user shops without logging in, and later decides to sign in, and either continue shopping or proceed to checkout, the cart logic should ensure that the user does not start from scratch after login into the site.</description>
+    </item>
   </channel>
 </rss>

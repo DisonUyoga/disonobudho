@@ -8,7 +8,7 @@ title = "Frontend Developer Assessment Project"
 type = "post"
 [[tech]]
 logo = "https://cdn.svgporn.com/logos/react.svg"
-name = "Hugo"
+name = "Nextjs"
 url = "https://gohugo.io/"
 +++
 
