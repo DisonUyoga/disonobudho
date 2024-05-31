@@ -2,24 +2,28 @@
 categories = ["web-dev"]
 coders = []
 date = 2023-11-19T23:00:00Z
-description = "Responsive Ecommerce website"
-github = ["https://github.com/DisonUyoga/Advance-Ecommerce-Furniture-site.git"]
+description = "FullStack Responsive Ecommerce website with React and Django Rest"
+github = ["https://github.com/DisonUyoga/Advance-Ecommerce-Furniture-site.git", "https://github.com/DisonUyoga/Advanced-ecommerce-furniture-site.git"]
 image = "https://cdn.svgporn.com/logos/react.svg"
 title = "Responsive Ecommerce Website"
 type = "post"
 [[tech]]
 logo = "https://cdn.svgporn.com/logos/react.svg"
-name = "React"
+name = "React and Django Rest Framework"
 url = "https://mainafurnitures.vercel.app/"
 
 
 +++
 
-### Click the link to Take a Tour into the site
+## React Public Site Link:
 
 [React Ecommerce Site](https://mainafurnitures.vercel.app/)
 
-The following depencies were used in this project:
+## Django Rest Public API Link:
+
+[API (Django Rest)](https://obudhodison.pythonanywhere.com/api/products/)
+
+The following react depencies were used in this project:
 
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^6.1.4",
@@ -82,7 +86,9 @@ This card is bult with pure css, `framer-motion` and remixicons to create beatif
 
 The cart automatically calculate the total amount of cart. Items can also be deleted from the cart. More importantly. Raw css has been used to make the UI highly responsive
 
-## Installation
+# Installation
+
+## React
 
 ### Cloning the site
 
@@ -102,4 +108,30 @@ npm i
 
 ```bash
 npm run dev
+```
+
+## Django Rest
+
+```bash
+git clone https://github.com/DisonUyoga/Advanced-ecommerce-furniture-site.git
+```
+
+```bash
+cd Advanced-ecommerce-furniture-site
+```
+
+```bash
+python install virtualenv venv
+```
+
+```bash
+cd venv/Scripts/activate
+```
+
+```bash
+python install -r requirements.txt
+```
+
+```bash
+python manage.py runserver
 ```
