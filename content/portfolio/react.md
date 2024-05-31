@@ -15,7 +15,7 @@ url = "https://mainafurnitures.vercel.app/"
 
 +++
 
-### Click the link to Take a Tour into the site:
+### Click the link to Take a Tour into the site
 
 [React Ecommerce Site](https://mainafurnitures.vercel.app/)
 
@@ -98,4 +98,8 @@ cd Advance-Ecommerce-Furniture-site
 
 ```bash
 npm i
+```
+
+```bash
+npm run dev
 ```
