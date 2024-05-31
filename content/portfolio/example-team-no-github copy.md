@@ -19,6 +19,7 @@ url = "https://gohugo.io/"
 The main objective of this project was to enhance user experience by establishing cart consistency (marging cart when not logged in and when a user logs in). When a user shops without logging in, and later decides to sign in, and either continue shopping or proceed to checkout, the cart logic should ensure that the user does not start from scratch after login into the site.
 
 ### Libraries used:
+
 - @auth/prisma-adapter,
 - @prisma/client,
 - daisyui,
@@ -33,7 +34,7 @@ The main objective of this project was to enhance user experience by establishin
 - react-dom,
 - react-hot-toast,
 - react-icons,
-   zod
+- zod
 
 ### Significance
 
