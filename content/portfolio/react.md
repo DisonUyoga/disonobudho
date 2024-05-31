@@ -2,10 +2,10 @@
 categories = ["web-dev"]
 coders = []
 date = 2020-06-19T23:00:00Z
-description = "A portfolio website made with Hugo"
+description = "Responsive Ecommerce website"
 github = ["https://github.com/DisonUyoga/Advance-Ecommerce-Furniture-site.git"]
 image = "https://cdn.svgporn.com/logos/react.svg"
-title = "Hugo Portfolio Website"
+title = "Responsive Ecommerce Website"
 type = "post"
 [[tech]]
 logo = "https://cdn.svgporn.com/logos/react.svg"
