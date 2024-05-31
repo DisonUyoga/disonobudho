@@ -55,7 +55,7 @@ The animation effect in the home page is managed by Aos. A simple and powerfull 
 
 ![exercise Screenshot](https://res.cloudinary.com/dfjpdzsin/image/upload/execisebenefits_potkbz.png "exercise Screenshot")
 
-A Higly responsive section creaeted using raw scss.
+A Higly responsive section created using raw scss.
 
 ### Pricing Card
 
