@@ -51,7 +51,7 @@ The following react depencies were used in this project:
 
 The animation effect in the home page is managed by Aos. A simple and powerfull open source library for creating beatiful animations.
 
-### Exercide Benefits Section
+### Exercise Benefits Section
 
 ![exercise Screenshot](https://res.cloudinary.com/dfjpdzsin/image/upload/execisebenefits_potkbz.png "exercise Screenshot")
 
