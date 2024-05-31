@@ -66,7 +66,7 @@ The assesment was based on:
 
 ### Project Implementation
 
-The libraries used in the project are:
+I used the following libraries in the project:
 
 - chakra-ui/react
 - tanstack/react-query
@@ -74,4 +74,4 @@ The libraries used in the project are:
 - emotion/react
 - tanstack/react-table
 
-The project relied heavily on tanstack/react-table to generate headless UI. I used Typescript to create complex data types that included index signatures.
+I relied heavily on tanstack/react-table to generate headless UI. I used Typescript to create complex data types that included index signatures.
