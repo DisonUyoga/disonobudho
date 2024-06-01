@@ -107,7 +107,7 @@ To ensure that a user only edits or view their own listing.
 
 ![](https://res.cloudinary.com/dfjpdzsin/image/upload/estatesearch_ui5bjn.png)
 
-I have invested heavily in the power of query params and mongoose operators to establish a powerful search engine, without using power search libraries such as `algolia`, which is economical for smaller projects.
+I have invested heavily in the power of search params and mongoose operators to develop a powerful search engine, without using powerful search libraries such as `algolia`, which is economical for smaller projects.
 
 # Installation
 
@@ -118,11 +118,13 @@ I have invested heavily in the power of query params and mongoose operators to e
 To clone the project, ensure you have git installed
 
 ```bash
-git clone https://github.com/DisonUyoga/Advance-Ecommerce-Furniture-site.git
+git clone https://github.com/DisonUyoga/mern-real-estate-site.git
 ```
 
+##### frontend
+
 ```bash
-cd Advance-Ecommerce-Furniture-site
+cd mern-real-estate-site/client
 ```
 
 ```bash
@@ -133,28 +135,16 @@ npm i
 npm run dev
 ```
 
-## Django Rest
+#### backend
 
 ```bash
-git clone https://github.com/DisonUyoga/gym-backend.git
+cd mern-real-estate-site
 ```
 
 ```bash
-cd gym-backend
+npm i
 ```
 
 ```bash
-python install virtualenv venv
-```
-
-```bash
-cd venv/Scripts/activate
-```
-
-```bash
-python install -r requirements.txt
-```
-
-```bash
-python manage.py runserver
+npm start
 ```
