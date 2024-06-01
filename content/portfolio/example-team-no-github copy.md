@@ -12,7 +12,13 @@ name = "Nextjs"
 url = "https://gohugo.io/"
 +++
 
+### Project Code
+
 [Project Code](https://github.com/DisonUyoga/nextjs-advanced-ecommerce.git)
+
+### Public Link to the Site
+
+[Next Js Link](https://nextjs-advanced-ecommerce.vercel.app/)
 
 ### Project Description
 
