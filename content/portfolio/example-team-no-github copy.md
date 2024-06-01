@@ -2,7 +2,7 @@
 categories = ["web-dev"]
 coders = ["disonobudho"]
 date = 2023-10-15T23:00:00Z
-description = "Nextjs 14 Ecommerce Project"
+description = "Marging Anonymous Cart with User Cart"
 image = "https://cdn.svgporn.com/logos/nextjs.svg"
 title = "Full Stack Nextjs 14 App"
 type = "post"
