@@ -4,13 +4,40 @@ coders = ["disonobudho"]
 date = 2024-05-15T23:00:00Z
 description = "Frontend Developer Assessment Project"
 image = "https://cdn.svgporn.com/logos/react.svg"
-title = "Frontend Developer Assessment Project"
+title = "Near Earth Object Web Service (NEOWS) Website"
 type = "post"
 [[tech]]
 logo = "https://cdn.svgporn.com/logos/react.svg"
 name = "Nextjs"
 url = "https://gohugo.io/"
 +++
+
+---
+
+**Project Description: Near Earth Object Web Service (NEOWS) Website**
+
+I developed a responsive web application for the Near Earth Object Web Service (NEOWS) using a robust stack of modern web technologies. The project involved the following key aspects:
+
+- **Frontend Development:**
+
+  - **React**: Utilized React to build a dynamic and interactive user interface.
+  - **TypeScript**: Implemented TypeScript to enhance code quality and maintainability with strong typing and error checking.
+  - **Chakra UI**: Employed Chakra UI for a consistent and accessible design system, ensuring a polished and user-friendly experience.
+  - **Emotion/React**: Used Emotion for efficient and scalable CSS-in-JS styling, providing a flexible approach to component-level styling.
+
+- **Data Management and Visualization:**
+
+  - **TanStack/React-Table**: Leveraged TanStack/React-Table for powerful and customizable table functionalities, including sorting, filtering, and pagination.
+  - **Chart.js**: Integrated Chart.js to visualize NEOWS data effectively, presenting complex information in a clear and interactive manner.
+  - **TanStack/React-Query**: Applied TanStack/React-Query for efficient data fetching and state management, optimizing the application's performance and user experience.
+
+- **Backend Communication:**
+
+  - **Axios**: Used Axios for seamless and reliable HTTP requests to the NEOWS API, ensuring smooth data retrieval and integration.
+
+This project highlights my ability to build responsive, data-driven web applications using a combination of advanced technologies. It showcases my proficiency in creating visually appealing and functional user interfaces, managing and visualizing data effectively, and integrating frontend and backend components seamlessly.
+
+---
 
 ### Pulic Link to the site:
 

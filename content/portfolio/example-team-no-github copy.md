@@ -2,7 +2,7 @@
 categories = ["web-dev"]
 coders = ["disonobudho"]
 date = 2023-10-15T23:00:00Z
-description = "Marging Anonymous Cart with User Cart"
+description = "E-Commerce Platform with Server-Side Rendering"
 image = "https://cdn.svgporn.com/logos/nextjs.svg"
 title = "Full Stack Nextjs 14 App"
 type = "post"
@@ -12,6 +12,23 @@ name = "Nextjs"
 url = "https://gohugo.io/"
 +++
 
+---
+
+**E-Commerce Platform with Server-Side Rendering**
+
+Developed a sophisticated e-commerce website leveraging Next.js for server-side rendering (SSR) to ensure optimal performance and SEO. Utilized TypeScript for type safety, enhancing code reliability and maintainability. Integrated Prisma for efficient data management and querying with a NoSQL database, enabling scalable and flexible data handling.
+
+Key Features:
+
+- **Server-Side Rendering (SSR):** Implemented with Next.js to enhance page load times and improve SEO by pre-rendering pages on the server.
+- **TypeScript:** Employed to provide static typing, reducing bugs and improving the development workflow.
+- **Prisma:** Used for seamless and performant interaction with a NoSQL database, ensuring reliable data operations.
+- **React:** Leveraged for building dynamic and responsive UI components, delivering a modern and intuitive user experience.
+
+This project highlights my ability to build a performant, scalable, and feature-rich e-commerce platform using a modern tech stack.
+
+---
+
 ### Project Code
 
 [Project Code](https://github.com/DisonUyoga/nextjs-advanced-ecommerce.git)
@@ -19,10 +36,6 @@ url = "https://gohugo.io/"
 ### Public Link to the Site
 
 [Next Js Link](https://nextjs-advanced-ecommerce.vercel.app/)
-
-### Project Description
-
-The main objective of this project was to enhance user experience by establishing cart consistency (marging cart when not logged in and when a user logs in). When a user shops without logging in, and later decides to sign in, and either continue shopping or proceed to checkout, the cart logic should ensure that the user does not start from scratch after login into the site.
 
 ### Libraries used:
 

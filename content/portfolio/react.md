@@ -15,7 +15,43 @@ url = "https://mainafurnitures.vercel.app/"
 
 +++
 
-## React Public Site Link:
+---
+
+## Responsive Furniture Website
+
+### Project Overview
+
+Developed a modern, responsive furniture website to showcase my proficiency in front-end design, CSS, animations, JavaScript, and React, with backend integration using Django Rest Framework. This project highlights my ability to create aesthetically pleasing, user-friendly interfaces and implement dynamic functionalities for an enhanced user experience.
+
+### Key Features
+
+- **Responsive Design**: Utilized advanced CSS techniques, including Flexbox and Grid, to ensure the site is fully responsive and looks great on all devices.
+- **CSS Animations**: Implemented smooth and engaging animations to enhance the visual appeal and interactivity of the site, providing a dynamic user experience.
+- **JavaScript & React**: Built the frontend using React to create reusable components, manage state efficiently, and provide a seamless single-page application experience.
+- **Django Rest Framework**: Integrated with a Django Rest API to manage backend functionalities, enabling secure and efficient data handling and user authentication.
+- **Interactive UI/UX**: Focused on creating an intuitive user interface with easy navigation, product filtering, and interactive elements to improve user engagement.
+
+### Technologies Used
+
+- **Front-end**: HTML5, CSS3, JavaScript (ES6+), React
+- **Styling**: CSS Animations, Flexbox, Grid, Sass
+- **Back-end**: Django Rest Framework
+- **Tools**: Git, Webpack, Babel
+
+### Highlights
+
+- Designed and developed a responsive layout that adapts seamlessly to various screen sizes and devices.
+- Created dynamic animations using CSS to provide a visually engaging user experience.
+- Developed reusable React components to streamline the development process and ensure code maintainability.
+- Implemented secure and efficient data handling using Django Rest Framework for backend integration.
+
+### Outcome
+
+This project demonstrates my ability to combine design aesthetics with functional development to create a responsive and interactive website. The furniture site serves as a testament to my skills in modern web development technologies and my capability to deliver high-quality, user-centric web applications.
+
+---
+
+## Public Site Link:
 
 [React Ecommerce Site](https://mainafurnitures.vercel.app/)
 

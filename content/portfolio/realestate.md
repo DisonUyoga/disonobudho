@@ -19,6 +19,41 @@ url = "https://real-estate-site-7a20.onrender.com/"
 
 [Real Estate Website](https://real-estate-site-7a20.onrender.com/)
 
+---
+
+### Responsive Portfolio Website
+
+---
+
+**Project Title: Responsive Design with CSS, Nodejs and Figma**
+
+**Introduction:**
+I developed a responsive Real Estate website to demonstrate my skills in CSS, Node.js, and web design. The site serves as a personal portfolio to showcase my work, skills, and experience as a web developer.
+
+**Technologies Used:**
+
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Design Tools:** Figma, Adobe Photoshop
+
+**Features:**
+
+- **Responsive Design:** The website adapts seamlessly to various screen sizes and devices, providing an optimal viewing experience on desktops, tablets, and smartphones.
+- **Interactive UI:** Implemented smooth animations and transitions using CSS to enhance user engagement.
+- **Dynamic Content:** Used Node.js and Express.js to serve dynamic content and handle form submissions.
+- **Gallery:** Showcases projects with detailed descriptions and images, highlighting different skills and technologies used in each project.
+
+**Design & Responsiveness:**
+
+- Focused on creating a clean, modern design with a user-friendly interface.
+- Ensured cross-browser compatibility and tested responsiveness using media queries and flexible grid layouts.
+- Utilized CSS Flexbox and Grid for layout design, making the site adaptable to different screen sizes without compromising the design integrity.
+
+**Conclusion:**
+This project successfully highlights my ability to build responsive and visually appealing websites using CSS, Node.js, and modern design principles. It stands as a testament to my skills in both frontend and backend development, as well as my commitment to creating user-centric web applications.
+
+---
+
 The following react depencies were used in this project:
 
      "@emailjs/browser": "^3.11.0",

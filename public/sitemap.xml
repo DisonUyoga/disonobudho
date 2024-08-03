@@ -3,12 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-05-15T23:00:00+00:00</lastmod>
+    <lastmod>2024-06-19T23:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/portfolio/example-team-no-github/</loc>
-    <lastmod>2024-05-15T23:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/portfolio/pizzaperk-app/</loc>
+    <lastmod>2024-06-19T23:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/portfolio/pizzaperk-site/</loc>
+    <lastmod>2024-06-19T23:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/web-dev/</loc>
+    <lastmod>2024-06-19T23:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/use_react_hook/</loc>
+    <lastmod>2024-05-30T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/portfolio/example-team-no-github/</loc>
     <lastmod>2024-05-15T23:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/first-blog/</loc>

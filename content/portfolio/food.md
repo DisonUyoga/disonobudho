@@ -15,6 +15,32 @@ url = "https://mainafurnitures.vercel.app/"
 
 +++
 
+---
+
+**Project Title: Responsive Food Delivery Web Application**
+
+**Description:**
+Developed a responsive web application for a food delivery service, demonstrating expertise in front-end and back-end development. This project showcases my ability to design and implement a modern, user-friendly interface with seamless functionality.
+
+**Key Features:**
+
+- **User Interface Design:** Created an intuitive and visually appealing design using HTML, CSS, and JavaScript, ensuring a cohesive and engaging user experience.
+- **Responsive Design:** Implemented responsive design principles using CSS and media queries to ensure the application is accessible and functional across various devices, including desktops, tablets, and smartphones.
+- **Interactive Elements:** Enhanced user interactions with dynamic features and animations using JavaScript, providing a smooth and interactive browsing experience.
+- **Backend Development:** Utilized Django Rest Framework to build a robust and scalable backend, managing user authentication, order processing, and data storage efficiently.
+- **API Integration:** Designed and integrated RESTful APIs to enable smooth communication between the frontend and backend, ensuring real-time updates and data synchronization.
+
+**Technologies Used:**
+
+- Frontend: HTML, CSS, JavaScript, React
+- Backend: Django Rest Framework
+- Tools: Git, GitHub,
+
+**Outcome:**
+The project successfully demonstrates my ability to design and develop a responsive web application from scratch, combining modern front-end technologies with a powerful backend framework. The final product is a fully functional food delivery site that is both user-friendly and efficient.
+
+---
+
 ## React Public Site Link:
 
 [Food Delivery Website](https://food-delivery-ecommerce-kyi2.vercel.app/)

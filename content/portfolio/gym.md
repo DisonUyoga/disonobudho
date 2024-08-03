@@ -15,6 +15,38 @@ url = "https://mainafurnitures.vercel.app/"
 
 +++
 
+---
+
+### Gym Fitness Website Project
+
+**Project Overview:**
+I developed a comprehensive and responsive Gym Fitness website to showcase my expertise in modern web development technologies. This project highlights my skills in front-end design, CSS, animations, JavaScript, React, and my familiarity with Django Rest for backend integration.
+
+**Key Features:**
+
+- **Responsive Design:** Implemented a fully responsive layout to ensure optimal viewing across a wide range of devices, from mobile phones to large desktop screens.
+- **Modern UI/UX Design:** Designed an intuitive and visually appealing user interface that enhances user experience, focusing on ease of navigation and accessibility.
+- **CSS and Animations:** Utilized advanced CSS techniques and animations to create smooth transitions and interactive elements that enhance user engagement.
+- **React Integration:** Leveraged React to build reusable components, manage state efficiently, and improve overall application performance.
+- **Django Rest Backend:** Incorporated Django Rest framework to handle API requests, manage user authentication, and securely store user data.
+
+**Technologies Used:**
+
+- **Front-end:** HTML5, CSS3, JavaScript, React
+- **Animations:** CSS animations
+- **Back-end:** Django Rest Framework
+- **Tools:** Git, Webpack, Babel
+
+**Project Highlights:**
+
+- Created a seamless user experience with responsive design and interactive elements.
+- Developed and integrated RESTful APIs for efficient data management.
+- Showcased proficiency in both front-end and back-end technologies.
+
+This project exemplifies my ability to deliver a fully functional, responsive, and visually engaging website, demonstrating my technical prowess and attention to detail in modern web development.
+
+---
+
 ## React Public Site Link:
 
 [Gym Website](https://gym-site-pi.vercel.app/)

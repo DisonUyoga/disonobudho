@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>Dison Obudho</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="Major changes in React">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="Dison Obudho">
+  <meta name="generator" content="Hugo 0.126.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body class="blog">
+    <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> Home
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/about">About</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/blog">Blog</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/portfolio">Portfolio</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/contact">Contact</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="http://localhost:1313/"> Home </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/about">About</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/blog">Blog</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/portfolio">Portfolio</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/contact">Contact</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+  
+
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
+
+
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">Amazing React 19 New Features !!!</h1>
+    <p class="uk-text-center uk-text-lead">Major changes in React</p>
+    <p class="uk-text-center">Published on May 30, 2024</p>
+    <p class="uk-text-center">Reading time: 2 minutes.</p>
+    
+
+    <hr class="full-width">
+    
+
+    <div class="content">
+      <p>Example: Fetching Data with <code>use</code>
+To demonstrate the use hook, let&rsquo;s create a simple example that fetches data from an API.</p>
+<ol>
+<li>Create a data fetching function:</li>
+</ol>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>const fetchData <span style="color:#2c5dcd">=</span> async <span style="color:#2c5dcd">()</span> <span style="color:#2c5dcd">=</span>&gt; <span style="color:#2c5dcd">{</span>
+</span></span><span style="display:flex;"><span>  const response <span style="color:#2c5dcd">=</span> await fetch<span style="color:#2c5dcd">(</span><span style="color:#0c6">&#39;https://jsonplaceholder.typicode.com/posts&#39;</span><span style="color:#2c5dcd">)</span>;
+</span></span><span style="display:flex;"><span>  const data <span style="color:#2c5dcd">=</span> await response.json<span style="color:#2c5dcd">()</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">return</span> data;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd">}</span>;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>Use the use hook in your component:</li>
+</ol>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>import React, <span style="color:#2c5dcd">{</span> use <span style="color:#2c5dcd">}</span> from <span style="color:#0c6">&#39;react&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>const DataFetchingComponent <span style="color:#2c5dcd">=</span> <span style="color:#2c5dcd">()</span> <span style="color:#2c5dcd">=</span>&gt; <span style="color:#2c5dcd">{</span>
+</span></span><span style="display:flex;"><span>  const data <span style="color:#2c5dcd">=</span> use<span style="color:#2c5dcd">(</span>fetchData<span style="color:#2c5dcd">())</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">return</span> <span style="color:#2c5dcd">(</span>
+</span></span><span style="display:flex;"><span>    &lt;div&gt;
+</span></span><span style="display:flex;"><span>      &lt;h1&gt;Fetched Data&lt;/h1&gt;
+</span></span><span style="display:flex;"><span>      &lt;ul&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd">{</span>data.map<span style="color:#2c5dcd">((</span>item<span style="color:#2c5dcd">)</span> <span style="color:#2c5dcd">=</span>&gt; <span style="color:#2c5dcd">(</span>
+</span></span><span style="display:flex;"><span>          &lt;li key<span style="color:#2c5dcd">={</span>item.id<span style="color:#2c5dcd">}</span>&gt;<span style="color:#2c5dcd">{</span>item.title<span style="color:#2c5dcd">}</span>&lt;/li&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd">))}</span>
+</span></span><span style="display:flex;"><span>      &lt;/ul&gt;
+</span></span><span style="display:flex;"><span>    &lt;/div&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#5918bb;font-weight:bold">export</span> default DataFetchingComponent;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Key Points:</p>
+<ol>
+<li>Automatic Suspense Handling:</li>
+</ol>
+<p>The use hook automatically suspends rendering until the promise passed to it resolves.
+This means you don’t need to manually manage loading states; React handles it for you.</p>
+<ol start="2">
+<li>Server Components:</li>
+</ol>
+<p>The use hook is particularly powerful in server components where data fetching can be done on the server before the HTML is sent to the client.</p>
+<ol start="3">
+<li>Error Handling:</li>
+</ol>
+<p>If the promise rejects, the use hook will propagate the error, and you can handle it using React&rsquo;s error boundaries.</p>
+<p>Complete Example with Error Handling:</p>
+<ol>
+<li>Create an error boundary component:</li>
+</ol>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>import React from <span style="color:#0c6">&#39;react&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>class ErrorBoundary extends React.Component <span style="color:#2c5dcd">{</span>
+</span></span><span style="display:flex;"><span>  constructor<span style="color:#2c5dcd">(</span>props<span style="color:#2c5dcd">)</span> <span style="color:#2c5dcd">{</span>
+</span></span><span style="display:flex;"><span>    super<span style="color:#2c5dcd">(</span>props<span style="color:#2c5dcd">)</span>;
+</span></span><span style="display:flex;"><span>    this.state <span style="color:#2c5dcd">=</span> <span style="color:#2c5dcd">{</span> hasError: <span style="color:#5918bb;font-weight:bold">false</span> <span style="color:#2c5dcd">}</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  static getDerivedStateFromError<span style="color:#2c5dcd">(</span>error<span style="color:#2c5dcd">)</span> <span style="color:#2c5dcd">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">return</span> <span style="color:#2c5dcd">{</span> hasError: <span style="color:#5918bb;font-weight:bold">true</span> <span style="color:#2c5dcd">}</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  componentDidCatch<span style="color:#2c5dcd">(</span>error, info<span style="color:#2c5dcd">)</span> <span style="color:#2c5dcd">{</span>
+</span></span><span style="display:flex;"><span>    console.error<span style="color:#2c5dcd">(</span><span style="color:#0c6">&#34;Error occurred:&#34;</span>, error, info<span style="color:#2c5dcd">)</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  render<span style="color:#2c5dcd">()</span> <span style="color:#2c5dcd">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">if</span> <span style="color:#2c5dcd">(</span>this.state.hasError<span style="color:#2c5dcd">)</span> <span style="color:#2c5dcd">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd;font-weight:bold">return</span> &lt;h1&gt;Something went wrong.&lt;/h1&gt;;
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">return</span> this.props.children;
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#5918bb;font-weight:bold">export</span> default ErrorBoundary;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>Use the use hook with the error boundary:</li>
+</ol>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>import React, <span style="color:#2c5dcd">{</span> use <span style="color:#2c5dcd">}</span> from <span style="color:#0c6">&#39;react&#39;</span>;
+</span></span><span style="display:flex;"><span>import ErrorBoundary from <span style="color:#0c6">&#39;./ErrorBoundary&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>const fetchData <span style="color:#2c5dcd">=</span> async <span style="color:#2c5dcd">()</span> <span style="color:#2c5dcd">=</span>&gt; <span style="color:#2c5dcd">{</span>
+</span></span><span style="display:flex;"><span>  const response <span style="color:#2c5dcd">=</span> await fetch<span style="color:#2c5dcd">(</span><span style="color:#0c6">&#39;https://jsonplaceholder.typicode.com/posts&#39;</span><span style="color:#2c5dcd">)</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">if</span> <span style="color:#2c5dcd">(</span>!response.ok<span style="color:#2c5dcd">)</span> <span style="color:#2c5dcd">{</span>
+</span></span><span style="display:flex;"><span>    throw new Error<span style="color:#2c5dcd">(</span><span style="color:#0c6">&#39;Network response was not ok&#39;</span><span style="color:#2c5dcd">)</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd">}</span>
+</span></span><span style="display:flex;"><span>  const data <span style="color:#2c5dcd">=</span> await response.json<span style="color:#2c5dcd">()</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">return</span> data;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>const DataFetchingComponent <span style="color:#2c5dcd">=</span> <span style="color:#2c5dcd">()</span> <span style="color:#2c5dcd">=</span>&gt; <span style="color:#2c5dcd">{</span>
+</span></span><span style="display:flex;"><span>  const data <span style="color:#2c5dcd">=</span> use<span style="color:#2c5dcd">(</span>fetchData<span style="color:#2c5dcd">())</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">return</span> <span style="color:#2c5dcd">(</span>
+</span></span><span style="display:flex;"><span>    &lt;div&gt;
+</span></span><span style="display:flex;"><span>      &lt;h1&gt;Fetched Data&lt;/h1&gt;
+</span></span><span style="display:flex;"><span>      &lt;ul&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd">{</span>data.map<span style="color:#2c5dcd">((</span>item<span style="color:#2c5dcd">)</span> <span style="color:#2c5dcd">=</span>&gt; <span style="color:#2c5dcd">(</span>
+</span></span><span style="display:flex;"><span>          &lt;li key<span style="color:#2c5dcd">={</span>item.id<span style="color:#2c5dcd">}</span>&gt;<span style="color:#2c5dcd">{</span>item.title<span style="color:#2c5dcd">}</span>&lt;/li&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd">))}</span>
+</span></span><span style="display:flex;"><span>      &lt;/ul&gt;
+</span></span><span style="display:flex;"><span>    &lt;/div&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd">}</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>const App <span style="color:#2c5dcd">=</span> <span style="color:#2c5dcd">()</span> <span style="color:#2c5dcd">=</span>&gt; <span style="color:#2c5dcd">(</span>
+</span></span><span style="display:flex;"><span>  &lt;ErrorBoundary&gt;
+</span></span><span style="display:flex;"><span>    &lt;DataFetchingComponent /&gt;
+</span></span><span style="display:flex;"><span>  &lt;/ErrorBoundary&gt;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#5918bb;font-weight:bold">export</span> default App;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>In this complete example, we’ve added an error boundary to catch any errors that occur during data fetching and display a fallback UI. The use hook simplifies asynchronous data handling, making your components cleaner and more concise</p>
+<p>Summary:</p>
+<ul>
+<li>The use hook allows you to work with promises more naturally.</li>
+<li>It suspends rendering until the promise resolves.</li>
+<li>It integrates well with server components.</li>
+<li>You can handle errors using React&rsquo;s error boundaries.</li>
+</ul>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+    </div>
+<footer class="footer">
+  <div class="uk-container">
+
+    <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+      <div class="uk-margin-small-bottom">
+        <h5 class="uk-margin-small-bottom">Email</h5>
+        <a href="mailto:disonobudho233@gmail.com">disonobudho233@gmail.com</a>
+
+      </div>
+      <div>
+        <h5 class="uk-margin-small-bottom">Address</h5>
+          <div uk-lightbox>
+            <a href="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwbHYJaUqfEgRK0Ui9dVGimc&amp;key=AIzaSyAE_4rVAKux_DSPcb_OdSRDaovtPOSk_3U" data-caption="Donholm, Nairobi"
+               data-type="iframe">Donholm, Nairobi</a>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+      <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+      <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+      2024
+      Dison Obudho
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
+</html>

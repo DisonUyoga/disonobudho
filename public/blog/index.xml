@@ -6,8 +6,15 @@
     <description>Recent content in Blog on Dison Obudho</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 15 May 2024 12:14:34 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 30 May 2024 12:14:34 +0600</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazing React 19 New Features !!!</title>
+      <link>http://localhost:1313/blog/use_react_hook/</link>
+      <pubDate>Thu, 30 May 2024 12:14:34 +0600</pubDate>
+      <guid>http://localhost:1313/blog/use_react_hook/</guid>
+      <description>Example: Fetching Data with use To demonstrate the use hook, let&amp;rsquo;s create a simple example that fetches data from an API.&#xA;Create a data fetching function: 1 2 3 4 5 const fetchData = async () =&amp;gt; { const response = await fetch(&amp;#39;https://jsonplaceholder.typicode.com/posts&amp;#39;); const data = await response.json(); return data; }; Use the use hook in your component: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 import React, { use } from &amp;#39;react&amp;#39;; const DataFetchingComponent = () =&amp;gt; { const data = use(fetchData()); return ( &amp;lt;div&amp;gt; &amp;lt;h1&amp;gt;Fetched Data&amp;lt;/h1&amp;gt; &amp;lt;ul&amp;gt; {data.</description>
+    </item>
     <item>
       <title>Frontend Developer Assessment Project</title>
       <link>http://localhost:1313/blog/first-blog/</link>

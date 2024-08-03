@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>Dison Obudho</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="PizzaPerk Food Delivery Site (production ready)">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="Dison Obudho">
+  <meta name="generator" content="Hugo 0.126.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body class="portfolio">
+    <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> Home
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/about">About</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/blog">Blog</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/portfolio">Portfolio</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/contact">Contact</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="http://localhost:1313/"> Home </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/about">About</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/blog">Blog</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/portfolio">Portfolio</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/contact">Contact</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+  
+
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
+
+
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">FullStack Responsive Food Delivery Site</h1>
+    <p class="uk-text-center uk-text-lead">PizzaPerk Food Delivery Site (production ready)</p>
+    <p class="uk-text-center">Published on Jun 19, 2024</p>
+    <p class="uk-text-center">Reading time: 10 minutes.</p>
+    
+
+    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-flex-center uk-grid-large uk-margin-small-top" uk-grid>
+      
+      <div>
+        <button class="uk-button uk-button-default" type="button"> <span uk-icon="icon: users"></span> Team
+          Project</button>
+        <div class="uk-width-auto" uk-dropdown="pos: bottom-center; delay-hide:400">
+          <div class="uk-dropdown-grid uk-child-width-1-2" uk-grid>
+            <div>
+              <ul class="uk-nav uk-dropdown-nav">
+                
+                <li><a href="https://github.com/DisonObudho"> <img src="https://github.com/DisonObudho.png" alt="Smiley face"
+                      width="42" height="42" style="border-radius: 50%"> DisonObudho</a></li>
+                
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    
+
+
+    
+      <div>
+        
+        <a class="uk-button uk-button-default" href="https://github.com/DisonUyoga/pizza-perk.git"> <span uk-icon="icon: github"></span>
+          Github</a>
+        
+      </div>
+      
+    </div>
+
+    
+
+    <hr class="full-width">
+    
+    
+    <h2 class="uk-text-center uk-heading-small">Built with</h2>
+
+    <section >
+      <div class="uk-container">
+
+        <div class="uk-child-width-1-6@l uk-child-width-1-3@m uk-child-width-1-3@s uk-child-width-1-2 uk-text-center uk-flex-center"
+             uk-grid>
+          
+          <div class="imagemargin">
+            <a href="https://pizza-perk.vercel.app/">
+            <img class="contain skills" src="https://cdn.svgporn.com/logos/nextjs.svg" alt="PizzaPerk" loading="lazy" style="cursor: pointer">
+            </a>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="full-width">
+    
+    
+
+    <div class="content">
+      <hr>
+<h2 id="site-url">Site Url:</h2>
+<p><a href="https://pizza-perk.vercel.app/">PizzaPerk Site</a></p>
+<h3 id="project-overview-pizzaperk-food-delivery-site">Project Overview: PizzaPerk Food Delivery Site</h3>
+<p><strong>Project Name:</strong> PizzaPerk</p>
+<p><strong>Tech Stack:</strong></p>
+<ul>
+<li><strong>Frontend:</strong> Next.js (using SSR, parallel routes, intercepted routes), Redux for state management, TypeScript for type safety and error-free code.</li>
+<li><strong>Backend:</strong> Supabase for database management and backend services.</li>
+<li><strong>Testing:</strong>
+<ul>
+<li><strong>end-to-end and component testing</strong>(cypress)</li>
+<li><strong>unit testing</strong>(jest and react testing library)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="features-and-functionality">Features and Functionality</h3>
+<h4 id="1-server-side-rendering-ssr">1. <strong>Server-Side Rendering (SSR)</strong></h4>
+<ul>
+<li><strong>Objective:</strong> Improve SEO and provide a faster initial load.</li>
+<li><strong>Implementation:</strong> Key pages, such as the homepage, menu, and order details, are rendered on the server. This allows the site to deliver content-rich pages quickly and enhance the user experience.</li>
+</ul>
+<p>watch video`
+<a href="https://res.cloudinary.com/dfjpdzsin/video/upload/v1722704239/pizzasitessrexplanation_amtfgg.mp4"><img src="https://res.cloudinary.com/dfjpdzsin/image/upload/v1722703891/modalplaceholder_rhjmrg.jpg" alt="Video Thumbnail"></a></p>
+<h4 id="2-parallel-routes">2. <strong>Parallel Routes</strong></h4>
+<ul>
+<li><strong>Objective:</strong> Improve load times and enhance user experience by loading multiple routes simultaneously.</li>
+<li><strong>Implementation:</strong> Used Next.js&rsquo;s ability to load components in parallel, particularly for complex pages like the menu with multiple categories etc.</li>
+</ul>
+<h4 id="3-intercepted-routes">3. <strong>Intercepted Routes</strong></h4>
+<ul>
+<li><strong>Objective:</strong> Provide a smoother navigation experience by intercepting routes and handling them appropriately without a full page reload.</li>
+<li><strong>Implementation:</strong> This feature is particularly useful for modals and sidebars. For example, clicking on a pizza item opens a modal with the item details without navigating away from the current page.</li>
+</ul>
+<h4 id="4-redux-for-state-management">4. <strong>Redux for State Management</strong></h4>
+<ul>
+<li><strong>Objective:</strong> Maintain a predictable state across the application.</li>
+<li><strong>Implementation:</strong> Used Redux to manage the application state, particularly for user authentication, cart management, order tracking, and user preferences. Actions and reducers are defined to handle the state transitions in a predictable manner.</li>
+</ul>
+<h4 id="5-supabase-backend">5. <strong>Supabase Backend</strong></h4>
+<ul>
+<li><strong>Objective:</strong> Provide a robust backend service with real-time capabilities.</li>
+<li><strong>Implementation:</strong> Supabase is used for database management, user authentication, and real-time data synchronization. It provides an API that the frontend interacts with to perform CRUD operations, manage user sessions, and handle real-time updates (e.g., order status changes).</li>
+</ul>
+<h4 id="6-typescript">6. <strong>TypeScript</strong></h4>
+<ul>
+<li><strong>Objective:</strong> Ensure type safety and reduce runtime errors by catching issues at compile time.</li>
+<li><strong>Implementation:</strong> TypeScript is used extensively throughout the project to define types for components, props, state, and API responses. This practice helps in maintaining clean, readable, and error-free code.</li>
+</ul>
+<hr>
+<h3 id="key-pages-and-components">Key Pages and Components</h3>
+<h4 id="homepage"><strong>Homepage</strong></h4>
+<ul>
+<li><strong>Features:</strong> Display featured pizzas and special deals.</li>
+<li><strong>SSR Implementation:</strong> Pre-render the page on the server to deliver content quickly.</li>
+</ul>
+<h4 id="menu-page"><strong>Menu Page</strong></h4>
+<ul>
+<li><strong>Features:</strong> Display categories of pizzas.</li>
+<li><strong>Parallel Routes:</strong> Load multiple categories and filters simultaneously to enhance performance.</li>
+</ul>
+<h4 id="pizza-detail-modal"><strong>Pizza Detail Modal</strong></h4>
+<ul>
+<li><strong>Features:</strong> Show detailed information about a pizza item, including price, and customization options.</li>
+<li><strong>Intercepted Routes:</strong> Open as a modal from the menu page without a full page reload.</li>
+</ul>
+<h4 id="cart"><strong>Cart</strong></h4>
+<ul>
+<li>
+<p><strong>Cart Logic</strong>: Users can access their cart from any screen, with real-time updates reflecting item additions and modifications. Interactive modals guide users through selecting pizza sizes, drink options, and customizing their orders, ensuring a smooth and efficient ordering process.</p>
+</li>
+<li>
+<p>Implemented a dynamic cart system where the total adjusts effectively when items are added or removed.</p>
+<ul>
+<li>Price tags automatically update based on pizza sizes, ensuring accurate pricing.</li>
+<li>Developed a logic to distinguish between drinks (no size update) and pizzas (size update required), ensuring clear categorization.</li>
+</ul>
+</li>
+</ul>
+<h4 id="user-profile"><strong>User Profile</strong></h4>
+<ul>
+<li><strong>Features:</strong> Display user information, order history, and settings.</li>
+<li><strong>Parallel Routes:</strong> Load different sections (orders, settings) in parallel for a smoother experience.</li>
+</ul>
+<hr>
+<h3 id="project-structure">Project Structure</h3>
+<p><strong>Frontend Directory:</strong></p>
+<ul>
+<li><strong>/pages:</strong> Contains all the page components, leveraging Next.js&rsquo;s file-based routing.</li>
+<li><strong>/components:</strong> Reusable UI components like buttons, modals, and forms.</li>
+<li><strong>/store:</strong> Redux store configuration, actions, and reducers.</li>
+<li><strong>/utils:</strong> Utility functions and hooks.</li>
+<li><strong>/types:</strong> TypeScript type definitions.</li>
+</ul>
+<p><strong>Backend Directory:</strong></p>
+<ul>
+<li><strong>/supabase:</strong> Configuration and API integration with Supabase.</li>
+<li><strong>/services:</strong> Backend services and functions interacting with Supabase.</li>
+</ul>
+<hr>
+<h3 id="summary">Summary</h3>
+<p>PizzaPerk leverages the power of Next.js for an optimized user experience through server-side rendering, parallel and intercepted routes, and robust state management with Redux. The use of TypeScript ensures type safety and reduces errors during development. Supabase provides a powerful backend solution, enabling real-time updates and efficient data management. This combination of technologies ensures PizzaPerk is fast, reliable, and user-friendly.</p>
+<p>The following react depencies were used in this project:</p>
+<pre><code>  &quot;@chakra-ui/icons&quot;: &quot;^2.1.1&quot;,
+&quot;@chakra-ui/react&quot;: &quot;^2.8.2&quot;,
+&quot;@clerk/nextjs&quot;: &quot;^5.2.6&quot;,
+&quot;@emotion/react&quot;: &quot;^11.13.0&quot;,
+&quot;@emotion/styled&quot;: &quot;^11.13.0&quot;,
+&quot;@fortawesome/fontawesome-svg-core&quot;: &quot;^6.6.0&quot;,
+&quot;@fortawesome/free-solid-svg-icons&quot;: &quot;^6.6.0&quot;,
+&quot;@fortawesome/react-fontawesome&quot;: &quot;^0.2.2&quot;,
+&quot;@reduxjs/toolkit&quot;: &quot;^2.2.6&quot;,
+&quot;@stripe/react-stripe-js&quot;: &quot;^2.7.3&quot;,
+&quot;@stripe/stripe-js&quot;: &quot;^4.1.0&quot;,
+&quot;@supabase/auth-helpers-nextjs&quot;: &quot;^0.10.0&quot;,
+&quot;@supabase/ssr&quot;: &quot;^0.4.0&quot;,
+&quot;@supabase/supabase-js&quot;: &quot;^2.44.4&quot;,
+&quot;@tanstack/react-query&quot;: &quot;^5.51.15&quot;,
+&quot;aos&quot;: &quot;^2.3.4&quot;,
+&quot;axios&quot;: &quot;^1.7.2&quot;,
+&quot;clsx&quot;: &quot;^2.1.1&quot;,
+&quot;firebase&quot;: &quot;^10.12.4&quot;,
+&quot;framer-motion&quot;: &quot;^11.3.18&quot;,
+&quot;install&quot;: &quot;^0.13.0&quot;,
+&quot;loadash&quot;: &quot;^1.0.0&quot;,
+&quot;lodash&quot;: &quot;^4.17.21&quot;,
+&quot;lorem-ipsum&quot;: &quot;^2.0.8&quot;,
+&quot;next&quot;: &quot;14.2.5&quot;,
+&quot;npm&quot;: &quot;^10.8.2&quot;,
+&quot;react&quot;: &quot;^18&quot;,
+&quot;react-countdown&quot;: &quot;^2.3.5&quot;,
+&quot;react-dom&quot;: &quot;^18&quot;,
+&quot;react-error-boundary&quot;: &quot;^4.0.13&quot;,
+&quot;react-hot-toast&quot;: &quot;^2.4.1&quot;,
+&quot;react-icons&quot;: &quot;^5.2.1&quot;,
+&quot;react-merge-refs&quot;: &quot;^2.1.1&quot;,
+&quot;react-redux&quot;: &quot;^9.1.2&quot;,
+&quot;react-slick&quot;: &quot;^0.30.2&quot;,
+&quot;slick-carousel&quot;: &quot;^1.8.1&quot;,
+&quot;svix&quot;: &quot;^1.25.0&quot;
+</code></pre>
+<h3 id="launching-the-pizzaperk-food-delivery-site">Launching the PizzaPerk Food Delivery Site</h3>
+<p>My PizzaPerk food delivery site, built with Next.js, is designed to offer an optimized, seamless user experience. Here’s how it launches:</p>
+<ol>
+<li>
+<p><strong>Server-Side Rendering (SSR)</strong>: We use SSR to pre-render the homepage, ensuring fast load times and improved SEO. This means that key content is ready to go as soon as the user lands on the site.</p>
+</li>
+<li>
+<p><strong>React Suspense for Loading States</strong>: To handle data fetching gracefully, we leverage React&rsquo;s Suspense. This allows us to show a loading indicator while waiting for data to be loaded, providing users with immediate feedback that the content is being retrieved.</p>
+</li>
+<li>
+<p><strong>Chakra UI Spinner</strong>: The loading indicator is implemented using Chakra UI&rsquo;s Spinner component. When the homepage is fetching data, the Chakra Spinner is displayed, centered on the screen, ensuring a visually appealing and consistent user experience.</p>
+</li>
+</ol>
+<p>This combination of Next.js for SSR, React Suspense, and Chakra UI for loading states ensures that PizzaPerk delivers a fast, responsive, and user-friendly experience from the moment users visit our site.</p>
+<p><code>watch video</code></p>
+<p><a href="https://res.cloudinary.com/dfjpdzsin/video/upload/v1722701865/homepagepizzaperksite_a0ei5e.mp4"><img src="https://res.cloudinary.com/dfjpdzsin/image/upload/v1722702576/homepahepizzasiteplaceholder_piwwkt.jpg" alt="Video Thumbnail"></a></p>
+<hr>
+<h3 id="product-detail-modal-implementation-in-pizaperk-food-delivery-app">Product Detail Modal Implementation in PizaPerk Food Delivery App</h3>
+<p><strong>Project:</strong> PizaPerk Food Delivery App<br>
+<strong>Technology Stack:</strong> Next.js, Redux</p>
+<p><strong>Description:</strong></p>
+<p>In the PizaPerk food delivery app, I implemented a versatile product detail modal that can be accessed from any page within the application. The modal dynamically determines whether the selected item is a pizza or a drink and displays the appropriate components accordingly. Here’s a detailed breakdown of the implementation:</p>
+<ol>
+<li>
+<p><strong>Dynamic Display Based on Item Type:</strong></p>
+<ul>
+<li>The modal automatically detects the type of item being viewed. If the item is a pizza, the modal displays a size selection component. For drinks, this component is omitted.</li>
+</ul>
+</li>
+<li>
+<p><strong>Global Access:</strong></p>
+<ul>
+<li>The product detail modal is designed to be accessible from any page in the app. This ensures a seamless user experience, allowing users to view product details and make selections without navigating away from their current page.</li>
+</ul>
+</li>
+<li>
+<p><strong>Implementation Using Next.js and Redux:</strong></p>
+<ul>
+<li><strong>Next.js:</strong> Utilized Next.js for server-side rendering and efficient routing.</li>
+<li><strong>Redux:</strong> Managed the state of the modal using Redux to ensure consistent behavior across the application.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>
+<p><strong>Parallel and Intercepted Routing:</strong></p>
+<ul>
+<li>Implemented parallel routing to allow the modal to open over any current route, without disrupting the user’s navigation flow.</li>
+<li>Intercepted routing ensures that when the modal is closed, the user returns to their previous state seamlessly.</li>
+</ul>
+</li>
+<li>
+<p><strong>Component Structure:</strong></p>
+<ul>
+<li>Created a reusable <code>ProductDetailModal</code> component.</li>
+<li>The component checks the item type and conditionally renders the <code>SizeSelection</code> component if the item is a pizza.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Code Snippet:</strong></p>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#0080ff;font-style:italic">// ProductDetailModal.js
+</span></span></span><span style="display:flex;"><span><span style="color:#0080ff;font-style:italic"></span><span style="color:#2c5dcd;font-weight:bold">import</span> { pizzas, sizes } from <span style="color:#0c6">&#34;@/data&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> { Tables } from <span style="color:#0c6">&#34;@/database.types&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> {
+</span></span><span style="display:flex;"><span>  addToCart,
+</span></span><span style="display:flex;"><span>  CartItems,
+</span></span><span style="display:flex;"><span>  selectSize,
+</span></span><span style="display:flex;"><span>  setIsPizza,
+</span></span><span style="display:flex;"><span>  setTogglePriceDependingOnSize,
+</span></span><span style="display:flex;"><span>  updateCartTotalAfterSizeChange,
+</span></span><span style="display:flex;"><span>} from <span style="color:#0c6">&#34;@/features/slices/cartSlice&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> { setProduct } from <span style="color:#0c6">&#34;@/features/slices/productSlice&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> { useAppDispatch, useAppSelector } from <span style="color:#0c6">&#34;@/lib/hook&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> { PizzaSize } from <span style="color:#0c6">&#34;@/type&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> {
+</span></span><span style="display:flex;"><span>  Box,
+</span></span><span style="display:flex;"><span>  Button,
+</span></span><span style="display:flex;"><span>  Center,
+</span></span><span style="display:flex;"><span>  Flex,
+</span></span><span style="display:flex;"><span>  Modal,
+</span></span><span style="display:flex;"><span>  ModalBody,
+</span></span><span style="display:flex;"><span>  ModalCloseButton,
+</span></span><span style="display:flex;"><span>  ModalContent,
+</span></span><span style="display:flex;"><span>  ModalFooter,
+</span></span><span style="display:flex;"><span>  ModalHeader,
+</span></span><span style="display:flex;"><span>  ModalOverlay,
+</span></span><span style="display:flex;"><span>  Text,
+</span></span><span style="display:flex;"><span>  useDisclosure,
+</span></span><span style="display:flex;"><span>} from <span style="color:#0c6">&#34;@chakra-ui/react&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> { motion } from <span style="color:#0c6">&#34;framer-motion&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> { useRouter, useSearchParams } from <span style="color:#0c6">&#34;next/navigation&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> { useEffect, useState } from <span style="color:#0c6">&#34;react&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> { createPortal } from <span style="color:#0c6">&#34;react-dom&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> toast from <span style="color:#0c6">&#34;react-hot-toast&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> PriceCard from <span style="color:#0c6">&#34;./PriceCard&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> ProductImage from <span style="color:#0c6">&#34;./ProductImage&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">import</span> SelectSize from <span style="color:#0c6">&#34;./SelectSize&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">const</span> ProductDetailModal <span style="color:#2c5dcd">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> dispatch <span style="color:#2c5dcd">=</span> useDispatch();
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> { item, isOpen } <span style="color:#2c5dcd">=</span> useSelector((state) =&gt; state.modal);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">if</span> (<span style="color:#2c5dcd">!</span>isOpen) <span style="color:#2c5dcd;font-weight:bold">return</span> <span style="color:#2c5dcd;font-weight:bold">null</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">return</span> createPortal(
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd">&lt;</span>Modal isOpen<span style="color:#2c5dcd">=</span>{isOpen} onClose<span style="color:#2c5dcd">=</span>{onClose}<span style="color:#2c5dcd">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd">&lt;</span>ModalOverlay <span style="color:#2c5dcd">/&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd">&lt;</span>ModalContent<span style="color:#2c5dcd">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd">&lt;</span>ModalHeader<span style="color:#2c5dcd">&gt;</span>{product.name}<span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/ModalHeader&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd">&lt;</span>ModalCloseButton onClick<span style="color:#2c5dcd">=</span>{() =&gt; router.back()} <span style="color:#2c5dcd">/&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd">&lt;</span>ModalBody<span style="color:#2c5dcd">&gt;</span>
+</span></span><span style="display:flex;"><span>          {product <span style="color:#2c5dcd">&amp;&amp;</span> (
+</span></span><span style="display:flex;"><span>            <span style="color:#2c5dcd">&lt;</span>Center<span style="color:#2c5dcd">&gt;</span>
+</span></span><span style="display:flex;"><span>              {pizzas[<span style="color:#5918bb;font-weight:bold">0</span>].img <span style="color:#2c5dcd">&amp;&amp;</span> product.image <span style="color:#2c5dcd">&amp;&amp;</span> (
+</span></span><span style="display:flex;"><span>                <span style="color:#2c5dcd">&lt;</span>Box
+</span></span><span style="display:flex;"><span>                  position<span style="color:#2c5dcd">=</span>{<span style="color:#0c6">&#34;relative&#34;</span>}
+</span></span><span style="display:flex;"><span>                  width<span style="color:#2c5dcd">=</span>{[<span style="color:#0c6">&#34;100vw&#34;</span>, <span style="color:#0c6">&#34;50vw&#34;</span>]}
+</span></span><span style="display:flex;"><span>                  h<span style="color:#2c5dcd">=</span>{<span style="color:#0c6">&#34;50vh&#34;</span>}
+</span></span><span style="display:flex;"><span>                  data<span style="color:#2c5dcd">-</span>aos<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#34;fade-down&#34;</span>
+</span></span><span style="display:flex;"><span>                  data<span style="color:#2c5dcd">-</span>aos<span style="color:#2c5dcd">-</span>easing<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#34;linear&#34;</span>
+</span></span><span style="display:flex;"><span>                  data<span style="color:#2c5dcd">-</span>aos<span style="color:#2c5dcd">-</span>duration<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#34;1500&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#2c5dcd">&gt;</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#2c5dcd">&lt;</span>ProductImage fallback<span style="color:#2c5dcd">=</span>{pizzas[<span style="color:#5918bb;font-weight:bold">0</span>].img} path<span style="color:#2c5dcd">=</span>{product.image} <span style="color:#2c5dcd">/&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/Box&gt;</span>
+</span></span><span style="display:flex;"><span>              )}
+</span></span><span style="display:flex;"><span>            <span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/Center&gt;</span>
+</span></span><span style="display:flex;"><span>          )}
+</span></span><span style="display:flex;"><span>          <span style="color:#2c5dcd">&lt;</span>PriceCard product<span style="color:#2c5dcd">=</span>{product} <span style="color:#2c5dcd">/&gt;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#2c5dcd">&lt;</span>Text
+</span></span><span style="display:flex;"><span>            fontSize<span style="color:#2c5dcd">=</span>{<span style="color:#0c6">&#34;10px&#34;</span>}
+</span></span><span style="display:flex;"><span>            fontWeight<span style="color:#2c5dcd">=</span>{<span style="color:#5918bb;font-weight:bold">600</span>}
+</span></span><span style="display:flex;"><span>            mt<span style="color:#2c5dcd">=</span>{<span style="color:#5918bb;font-weight:bold">2</span>}
+</span></span><span style="display:flex;"><span>            color<span style="color:#2c5dcd">=</span>{<span style="color:#0c6">&#34;#050152&#34;</span>}
+</span></span><span style="display:flex;"><span>            data<span style="color:#2c5dcd">-</span>aos<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#34;zoom-in&#34;</span>
+</span></span><span style="display:flex;"><span>            data<span style="color:#2c5dcd">-</span>aos<span style="color:#2c5dcd">-</span>duration<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#34;1500&#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#2c5dcd">&gt;</span>
+</span></span><span style="display:flex;"><span>            The offer only applies to Extra Large
+</span></span><span style="display:flex;"><span>          <span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/Text&gt;</span>
+</span></span><span style="display:flex;"><span>          {determineIfItemIsPizza <span style="color:#2c5dcd">&amp;&amp;</span> (
+</span></span><span style="display:flex;"><span>            <span style="color:#2c5dcd">&lt;</span>Flex
+</span></span><span style="display:flex;"><span>              flex<span style="color:#2c5dcd">=</span>{<span style="color:#5918bb;font-weight:bold">1</span>}
+</span></span><span style="display:flex;"><span>              mt<span style="color:#2c5dcd">=</span>{<span style="color:#5918bb;font-weight:bold">4</span>}
+</span></span><span style="display:flex;"><span>              alignContent<span style="color:#2c5dcd">=</span>{<span style="color:#0c6">&#34;center&#34;</span>}
+</span></span><span style="display:flex;"><span>              justify<span style="color:#2c5dcd">=</span>{<span style="color:#0c6">&#34;space-between&#34;</span>}
+</span></span><span style="display:flex;"><span>            <span style="color:#2c5dcd">&gt;</span>
+</span></span><span style="display:flex;"><span>              {sizes.map((s, index) =&gt; (
+</span></span><span style="display:flex;"><span>                <span style="color:#2c5dcd">&lt;</span>SelectSize
+</span></span><span style="display:flex;"><span>                  key<span style="color:#2c5dcd">=</span>{index}
+</span></span><span style="display:flex;"><span>                  sizes<span style="color:#2c5dcd">=</span>{s}
+</span></span><span style="display:flex;"><span>                  selected<span style="color:#2c5dcd">=</span>{selected}
+</span></span><span style="display:flex;"><span>                  handleSelected<span style="color:#2c5dcd">=</span>{handleSelected}
+</span></span><span style="display:flex;"><span>                  product<span style="color:#2c5dcd">=</span>{product}
+</span></span><span style="display:flex;"><span>                <span style="color:#2c5dcd">/&gt;</span>
+</span></span><span style="display:flex;"><span>              ))}
+</span></span><span style="display:flex;"><span>            <span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/Flex&gt;</span>
+</span></span><span style="display:flex;"><span>          )}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>          {product.description <span style="color:#2c5dcd">&amp;&amp;</span> (
+</span></span><span style="display:flex;"><span>            <span style="color:#2c5dcd">&lt;</span>Text
+</span></span><span style="display:flex;"><span>              mt<span style="color:#2c5dcd">=</span>{<span style="color:#5918bb;font-weight:bold">10</span>}
+</span></span><span style="display:flex;"><span>              fontSize<span style="color:#2c5dcd">=</span>{[<span style="color:#0c6">&#34;xs&#34;</span>, <span style="color:#0c6">&#34;md&#34;</span>]}
+</span></span><span style="display:flex;"><span>              data<span style="color:#2c5dcd">-</span>aos<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#34;zoom-in&#34;</span>
+</span></span><span style="display:flex;"><span>              data<span style="color:#2c5dcd">-</span>aos<span style="color:#2c5dcd">-</span>duration<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#34;1500&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#2c5dcd">&gt;</span>
+</span></span><span style="display:flex;"><span>              {product.description}
+</span></span><span style="display:flex;"><span>            <span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/Text&gt;</span>
+</span></span><span style="display:flex;"><span>          )}
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/ModalBody&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd">&lt;</span>ModalFooter<span style="color:#2c5dcd">&gt;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#2c5dcd">&lt;</span>MotionButton
+</span></span><span style="display:flex;"><span>            whileHover<span style="color:#2c5dcd">=</span>{{ scale<span style="color:#2c5dcd">:</span> <span style="color:#5918bb;font-weight:bold">1.1</span> }}
+</span></span><span style="display:flex;"><span>            whileTap<span style="color:#2c5dcd">=</span>{{ scale<span style="color:#2c5dcd">:</span> <span style="color:#5918bb;font-weight:bold">0.9</span> }}
+</span></span><span style="display:flex;"><span>            transition<span style="color:#2c5dcd">=</span>{{ type<span style="color:#2c5dcd">:</span> <span style="color:#0c6">&#34;spring&#34;</span>, stiffness<span style="color:#2c5dcd">:</span> <span style="color:#5918bb;font-weight:bold">300</span> }}
+</span></span><span style="display:flex;"><span>            size<span style="color:#2c5dcd">=</span>{[<span style="color:#0c6">&#34;sm&#34;</span>, <span style="color:#0c6">&#34;md&#34;</span>]}
+</span></span><span style="display:flex;"><span>            fontSize<span style="color:#2c5dcd">=</span>{[<span style="color:#0c6">&#34;xs&#34;</span>, <span style="color:#0c6">&#34;md&#34;</span>]}
+</span></span><span style="display:flex;"><span>            colorScheme<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#34;blue&#34;</span>
+</span></span><span style="display:flex;"><span>            mr<span style="color:#2c5dcd">=</span>{<span style="color:#5918bb;font-weight:bold">3</span>}
+</span></span><span style="display:flex;"><span>            onClick<span style="color:#2c5dcd">=</span>{() =&gt; {
+</span></span><span style="display:flex;"><span>              router.back();
+</span></span><span style="display:flex;"><span>              onClose();
+</span></span><span style="display:flex;"><span>            }}
+</span></span><span style="display:flex;"><span>          <span style="color:#2c5dcd">&gt;</span>
+</span></span><span style="display:flex;"><span>            Back
+</span></span><span style="display:flex;"><span>          <span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/MotionButton&gt;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#2c5dcd">&lt;</span>MotionButton
+</span></span><span style="display:flex;"><span>            whileHover<span style="color:#2c5dcd">=</span>{{ scale<span style="color:#2c5dcd">:</span> <span style="color:#5918bb;font-weight:bold">1.1</span> }}
+</span></span><span style="display:flex;"><span>            whileTap<span style="color:#2c5dcd">=</span>{{ scale<span style="color:#2c5dcd">:</span> <span style="color:#5918bb;font-weight:bold">0.9</span> }}
+</span></span><span style="display:flex;"><span>            transition<span style="color:#2c5dcd">=</span>{{ type<span style="color:#2c5dcd">:</span> <span style="color:#0c6">&#34;spring&#34;</span>, stiffness<span style="color:#2c5dcd">:</span> <span style="color:#5918bb;font-weight:bold">300</span> }}
+</span></span><span style="display:flex;"><span>            size<span style="color:#2c5dcd">=</span>{[<span style="color:#0c6">&#34;sm&#34;</span>, <span style="color:#0c6">&#34;md&#34;</span>]}
+</span></span><span style="display:flex;"><span>            fontSize<span style="color:#2c5dcd">=</span>{[<span style="color:#0c6">&#34;xs&#34;</span>, <span style="color:#0c6">&#34;md&#34;</span>]}
+</span></span><span style="display:flex;"><span>            colorScheme<span style="color:#2c5dcd">=</span><span style="color:#0c6">&#34;blue&#34;</span>
+</span></span><span style="display:flex;"><span>            bg<span style="color:#2c5dcd">=</span>{<span style="color:#0c6">&#34;#088d25&#34;</span>}
+</span></span><span style="display:flex;"><span>            mr<span style="color:#2c5dcd">=</span>{<span style="color:#5918bb;font-weight:bold">3</span>}
+</span></span><span style="display:flex;"><span>            onClick<span style="color:#2c5dcd">=</span>{() =&gt; addProductToCart(product)}
+</span></span><span style="display:flex;"><span>          <span style="color:#2c5dcd">&gt;</span>
+</span></span><span style="display:flex;"><span>            Add to Cart
+</span></span><span style="display:flex;"><span>          <span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/MotionButton&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/ModalFooter&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/ModalContent&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd">&lt;</span><span style="color:#fff;background-color:#c00">/Modal&gt;,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#5918bb;font-weight:bold">document</span>.getElementById(<span style="color:#0c6">&#34;modal-root&#34;</span>)<span style="color:#2c5dcd">!</span>
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#2c5dcd;font-weight:bold">export</span> <span style="color:#2c5dcd;font-weight:bold">default</span> ProductDetailModal;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>State Management:</strong></p>
+<div class="highlight"><div style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">156
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">157
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">158
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">159
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">160
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">161
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">162
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">163
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">164
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">165
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">166
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">167
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#4d4d4d;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#0080ff;font-style:italic">// actions.js
+</span></span></span><span style="display:flex;"><span><span style="color:#0080ff;font-style:italic"></span> <span style="color:#2c5dcd;font-weight:bold">const</span> [loading, setLoading] <span style="color:#2c5dcd">=</span> useState(<span style="color:#2c5dcd;font-weight:bold">false</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> [selectionLoader, setSelectionLoader] <span style="color:#2c5dcd">=</span> useState(<span style="color:#2c5dcd;font-weight:bold">false</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> searcParams <span style="color:#2c5dcd">=</span> useSearchParams();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> dispatch <span style="color:#2c5dcd">=</span> useAppDispatch();
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> router <span style="color:#2c5dcd">=</span> useRouter();
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> {
+</span></span><span style="display:flex;"><span>    totalAmount,
+</span></span><span style="display:flex;"><span>    totalQuantity,
+</span></span><span style="display:flex;"><span>    sizes<span style="color:#2c5dcd">:</span> selected,
+</span></span><span style="display:flex;"><span>  } <span style="color:#2c5dcd">=</span> useAppSelector((state) =&gt; state.cart);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> cartItems <span style="color:#2c5dcd">=</span> useAppSelector((state) =&gt; state.cart.cartItems);
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> searchParams <span style="color:#2c5dcd">=</span> useSearchParams();
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> [cartProduct, setCartProduct] <span style="color:#2c5dcd">=</span> useState<span style="color:#2c5dcd">&lt;</span>CartItems <span style="color:#2c5dcd">|</span> <span style="color:#2c5dcd;font-weight:bold">undefined</span><span style="color:#2c5dcd">&gt;</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> [openZoom, setOpenZoom] <span style="color:#2c5dcd">=</span> useState(<span style="color:#2c5dcd;font-weight:bold">false</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> [priceSize, setPriceSize] <span style="color:#2c5dcd">=</span> useState<span style="color:#2c5dcd">&lt;</span>number <span style="color:#2c5dcd">|</span> <span style="color:#2c5dcd;font-weight:bold">null</span><span style="color:#2c5dcd">&gt;</span>(<span style="color:#2c5dcd;font-weight:bold">null</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> { isOpen, onOpen, onClose } <span style="color:#2c5dcd">=</span> useDisclosure();
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> determineIfItemIsPizza <span style="color:#2c5dcd">=</span> <span style="color:#2c5dcd">!!</span>(
+</span></span><span style="display:flex;"><span>    product<span style="color:#2c5dcd">?</span>.size_large <span style="color:#2c5dcd">||</span>
+</span></span><span style="display:flex;"><span>    product<span style="color:#2c5dcd">?</span>.size_medium <span style="color:#2c5dcd">||</span>
+</span></span><span style="display:flex;"><span>    product<span style="color:#2c5dcd">?</span>.size_small
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> update <span style="color:#2c5dcd">=</span> searchParams.get(<span style="color:#0c6">&#34;update&#34;</span>);
+</span></span><span style="display:flex;"><span>  useEffect(() =&gt; {
+</span></span><span style="display:flex;"><span>    OpenModal();
+</span></span><span style="display:flex;"><span>  }, []);
+</span></span><span style="display:flex;"><span>  useEffect(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">if</span> (determineIfItemIsPizza) {
+</span></span><span style="display:flex;"><span>      dispatch(setIsPizza({ isPizza<span style="color:#2c5dcd">:</span> determineIfItemIsPizza }));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">if</span> (cartItems) {
+</span></span><span style="display:flex;"><span>      checkIfItemIsAlreadyInTheCart(cartItems);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">if</span> (cartItems <span style="color:#2c5dcd">&amp;&amp;</span> cartProduct) {
+</span></span><span style="display:flex;"><span>      changeCartTotalWhenSizeIsChanged(cartItems);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }, [cartItems]);
+</span></span><span style="display:flex;"><span>  useEffect(() =&gt; {
+</span></span><span style="display:flex;"><span>    dispatch(setTogglePriceDependingOnSize({ price<span style="color:#2c5dcd">:</span> product.price }));
+</span></span><span style="display:flex;"><span>    dispatch(
+</span></span><span style="display:flex;"><span>      selectSize({
+</span></span><span style="display:flex;"><span>        size<span style="color:#2c5dcd">:</span> <span style="color:#0c6">&#34;XL&#34;</span>,
+</span></span><span style="display:flex;"><span>        product,
+</span></span><span style="display:flex;"><span>      })
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">if</span> (product) {
+</span></span><span style="display:flex;"><span>      dispatch(setProduct({ product }));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }, [product, determineIfItemIsPizza]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">function</span> OpenModal() {
+</span></span><span style="display:flex;"><span>    onOpen();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">const</span> handleSelected <span style="color:#2c5dcd">=</span> (size<span style="color:#2c5dcd">:</span> PizzaSize <span style="color:#2c5dcd">|</span> <span style="color:#2c5dcd;font-weight:bold">null</span> <span style="color:#2c5dcd">|</span> <span style="color:#2c5dcd;font-weight:bold">undefined</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    size <span style="color:#2c5dcd">!=</span> <span style="color:#2c5dcd;font-weight:bold">null</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd">?</span> toast.success(
+</span></span><span style="display:flex;"><span>          <span style="color:#0c6">`You have selected </span><span style="color:#0c6">${</span>
+</span></span><span style="display:flex;"><span>            size <span style="color:#2c5dcd">==</span> <span style="color:#0c6">&#34;S&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#2c5dcd">?</span> <span style="color:#0c6">&#34;small&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#2c5dcd">:</span> size <span style="color:#2c5dcd">===</span> <span style="color:#0c6">&#34;M&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#2c5dcd">?</span> <span style="color:#0c6">&#34;medium&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#2c5dcd">:</span> size <span style="color:#2c5dcd">===</span> <span style="color:#0c6">&#34;L&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#2c5dcd">?</span> <span style="color:#0c6">&#34;large&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#2c5dcd">:</span> size <span style="color:#2c5dcd">===</span> <span style="color:#0c6">&#34;XL&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#2c5dcd">?</span> <span style="color:#0c6">&#34;extra large&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#2c5dcd">:</span> <span style="color:#2c5dcd;font-weight:bold">null</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#0c6">}</span><span style="color:#0c6">`</span>
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd">:</span> <span style="color:#2c5dcd;font-weight:bold">null</span>;
+</span></span><span style="display:flex;"><span>    setSelectionLoader(<span style="color:#2c5dcd;font-weight:bold">true</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd;font-weight:bold">if</span> (<span style="color:#2c5dcd">!</span>product) <span style="color:#2c5dcd;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      dispatch(
+</span></span><span style="display:flex;"><span>        selectSize({
+</span></span><span style="display:flex;"><span>          size<span style="color:#2c5dcd">:</span> size as PizzaSize,
+</span></span><span style="display:flex;"><span>          product,
+</span></span><span style="display:flex;"><span>        })
+</span></span><span style="display:flex;"><span>      );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      updateSize();
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd;font-weight:bold">if</span> (<span style="color:#2c5dcd">!</span>size) <span style="color:#2c5dcd;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      togglePriceDependingOnTheSize(product, size);
+</span></span><span style="display:flex;"><span>    } <span style="color:#2c5dcd;font-weight:bold">catch</span> (error) {
+</span></span><span style="display:flex;"><span>    } <span style="color:#2c5dcd;font-weight:bold">finally</span> {
+</span></span><span style="display:flex;"><span>      setSelectionLoader(<span style="color:#2c5dcd;font-weight:bold">false</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">function</span> checkIfItemIsAlreadyInTheCart(c<span style="color:#2c5dcd">:</span> CartItems[]) {
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">const</span> cartItem <span style="color:#2c5dcd">=</span> cartItems.find((p) =&gt; p.id <span style="color:#2c5dcd">===</span> product<span style="color:#2c5dcd">?</span>.id) as CartItems;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">if</span> (<span style="color:#2c5dcd">!</span>cartItem <span style="color:#2c5dcd">||</span> <span style="color:#2c5dcd">!</span>product) <span style="color:#2c5dcd;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    setCartProduct(cartItem);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">function</span> togglePriceDependingOnTheSize(
+</span></span><span style="display:flex;"><span>    product<span style="color:#2c5dcd">:</span> Tables<span style="color:#2c5dcd">&lt;</span><span style="color:#0c6">&#34;products&#34;</span><span style="color:#2c5dcd">&gt;</span>,
+</span></span><span style="display:flex;"><span>    selectedSize<span style="color:#2c5dcd">:</span> PizzaSize
+</span></span><span style="display:flex;"><span>  ) {
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">switch</span> (selectedSize) {
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd;font-weight:bold">case</span> <span style="color:#0c6">&#34;S&#34;</span><span style="color:#2c5dcd">:</span>
+</span></span><span style="display:flex;"><span>        dispatch(setTogglePriceDependingOnSize({ price<span style="color:#2c5dcd">:</span> product.size_small }));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd;font-weight:bold">break</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd;font-weight:bold">case</span> <span style="color:#0c6">&#34;M&#34;</span><span style="color:#2c5dcd">:</span>
+</span></span><span style="display:flex;"><span>        dispatch(setTogglePriceDependingOnSize({ price<span style="color:#2c5dcd">:</span> product.size_medium }));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd;font-weight:bold">break</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd;font-weight:bold">case</span> <span style="color:#0c6">&#34;L&#34;</span><span style="color:#2c5dcd">:</span>
+</span></span><span style="display:flex;"><span>        dispatch(setTogglePriceDependingOnSize({ price<span style="color:#2c5dcd">:</span> product.size_large }));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#2c5dcd;font-weight:bold">break</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#2c5dcd;font-weight:bold">default</span><span style="color:#2c5dcd">:</span>
+</span></span><span style="display:flex;"><span>        dispatch(setTogglePriceDependingOnSize({ price<span style="color:#2c5dcd">:</span> product.price }));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">function</span> changeCartTotalWhenSizeIsChanged(c<span style="color:#2c5dcd">:</span> CartItems[]) {
+</span></span><span style="display:flex;"><span>    setSelectionLoader(<span style="color:#2c5dcd;font-weight:bold">true</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">const</span> item <span style="color:#2c5dcd">=</span> c.find((p) =&gt; p.id <span style="color:#2c5dcd">===</span> product<span style="color:#2c5dcd">?</span>.id);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">if</span> (<span style="color:#2c5dcd">!</span>item) <span style="color:#2c5dcd;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">if</span> (item<span style="color:#2c5dcd">?</span>.price) {
+</span></span><span style="display:flex;"><span>      dispatch(
+</span></span><span style="display:flex;"><span>        updateCartTotalAfterSizeChange({
+</span></span><span style="display:flex;"><span>          product<span style="color:#2c5dcd">:</span> item,
+</span></span><span style="display:flex;"><span>          currentPrice<span style="color:#2c5dcd">:</span> item.price,
+</span></span><span style="display:flex;"><span>        })
+</span></span><span style="display:flex;"><span>      );
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    setSelectionLoader(<span style="color:#2c5dcd;font-weight:bold">false</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">function</span> updateSize() {
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">if</span> (update <span style="color:#2c5dcd">&amp;&amp;</span> cartItems <span style="color:#2c5dcd">&amp;&amp;</span> cartProduct) {
+</span></span><span style="display:flex;"><span>      changeCartTotalWhenSizeIsChanged(cartItems);
+</span></span><span style="display:flex;"><span>      toast.success(<span style="color:#0c6">&#34;item updated&#34;</span>);
+</span></span><span style="display:flex;"><span>      router.back();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#2c5dcd;font-weight:bold">function</span> addProductToCart(product<span style="color:#2c5dcd">:</span> Tables<span style="color:#2c5dcd">&lt;</span><span style="color:#0c6">&#34;products&#34;</span><span style="color:#2c5dcd">&gt;</span>) {
+</span></span><span style="display:flex;"><span>    dispatch(setIsPizza({ isPizza<span style="color:#2c5dcd">:</span> determineIfItemIsPizza }));
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">if</span> (<span style="color:#2c5dcd">!</span>product) <span style="color:#2c5dcd;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2c5dcd;font-weight:bold">try</span> {
+</span></span><span style="display:flex;"><span>      setLoading(<span style="color:#2c5dcd;font-weight:bold">true</span>);
+</span></span><span style="display:flex;"><span>      dispatch(
+</span></span><span style="display:flex;"><span>        addToCart({
+</span></span><span style="display:flex;"><span>          product,
+</span></span><span style="display:flex;"><span>          size<span style="color:#2c5dcd">:</span> selected,
+</span></span><span style="display:flex;"><span>        })
+</span></span><span style="display:flex;"><span>      );
+</span></span><span style="display:flex;"><span>      setLoading(<span style="color:#2c5dcd;font-weight:bold">false</span>);
+</span></span><span style="display:flex;"><span>      toast.success(<span style="color:#0c6">&#34;item added to cart&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      router.back();
+</span></span><span style="display:flex;"><span>    } <span style="color:#2c5dcd;font-weight:bold">catch</span> (error<span style="color:#2c5dcd">:</span> any) {
+</span></span><span style="display:flex;"><span>    } <span style="color:#2c5dcd;font-weight:bold">finally</span> {
+</span></span><span style="display:flex;"><span>      setLoading(<span style="color:#2c5dcd;font-weight:bold">false</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This implementation not only enhances the user experience by providing dynamic content but also maintains the state and navigational context, ensuring a smooth and intuitive interaction for users.</p>
+<p><code>watch video</code>
+<a href="https://res.cloudinary.com/dfjpdzsin/video/upload/v1722703883/modalpizzaperksite_p14hux.mp4"><img src="https://res.cloudinary.com/dfjpdzsin/image/upload/v1722703891/modalplaceholder_rhjmrg.jpg" alt="Video Thumbnail"></a></p>
+<hr>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+    </div>
+<footer class="footer">
+  <div class="uk-container">
+
+    <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+      <div class="uk-margin-small-bottom">
+        <h5 class="uk-margin-small-bottom">Email</h5>
+        <a href="mailto:disonobudho233@gmail.com">disonobudho233@gmail.com</a>
+
+      </div>
+      <div>
+        <h5 class="uk-margin-small-bottom">Address</h5>
+          <div uk-lightbox>
+            <a href="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwbHYJaUqfEgRK0Ui9dVGimc&amp;key=AIzaSyAE_4rVAKux_DSPcb_OdSRDaovtPOSk_3U" data-caption="Donholm, Nairobi"
+               data-type="iframe">Donholm, Nairobi</a>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+      <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+      <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+      2024
+      Dison Obudho
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
+</html>
