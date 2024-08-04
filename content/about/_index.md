@@ -12,7 +12,7 @@ authorImage: "images/about/profile.jpg"
 
 ### SUMMARY
 
-I am a software engineer with more than 4 years of experience working in web development using React, Redux, TypeScript, Next, Javascript , Python and UI/UX design using Figma. I am a masterful problem-solver and boost an extensive portfolio of finished professional products. I also enjoy creating beautiful software with equally impressive code along with possessing a talent for understanding and refactoring large code-base. I believe in best practices, small functions and white space.
+I am a software engineer with more than 4 years of experience working in web development using React, Redux,React Native, TypeScript, Next, Javascript , Python and UI/UX design using Figma. I am a masterful problem-solver and boost an extensive portfolio of finished professional products. I also enjoy creating beautiful software with equally impressive code along with possessing a talent for understanding and refactoring large code-base. I believe in best practices, small functions and white space.
 I am always striving to find new and more effective ways to solve problems. I enjoy working through all the stages of development and I place a lot of importance on writing clean, well documented and easy to maintain code. I always make it priority to be responsive and communicate regularly on the development process.
 
 ### EXPERIENCE
