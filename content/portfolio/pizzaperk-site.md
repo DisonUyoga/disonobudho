@@ -42,7 +42,7 @@ url = "https://pizza-perk.vercel.app/"
 - **Objective:** Improve SEO and provide a faster initial load.
 - **Implementation:** Key pages, such as the homepage, menu, and order details, are rendered on the server. This allows the site to deliver content-rich pages quickly and enhance the user experience.
 
-watch video`
+`watch video`
 [![Video Thumbnail](https://res.cloudinary.com/dfjpdzsin/image/upload/v1722703891/modalplaceholder_rhjmrg.jpg)](https://res.cloudinary.com/dfjpdzsin/video/upload/v1722704239/pizzasitessrexplanation_amtfgg.mp4)
 
 #### 2. **Parallel Routes**

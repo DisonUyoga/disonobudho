@@ -17,24 +17,6 @@ I am always striving to find new and more effective ways to solve problems. I en
 
 ### EXPERIENCE
 
-### Davis and Shirtliff - Frontend Developer (internship)
-
-### July 2019-March 2020
-
-• Used React.js with React Hooks to build a dynamic single-page UI that takes advantage of the virtual DOM with modular, reusable components to keep code maintainable and easily understandable for future iterations.
-
-• Collaborated with the design team on Figma throughout the development process and discussed different UI/UX perspectives of a well-designed web application.
-
-• Managed the work on different branches, making pull requests to resolve merge conflicts and maintain a smooth git workflow.
-
-• Creation and maintenance of software documentation.
-
-• Created frontend application that consumed data from backend inform of Restful APIs.
-
-• Wrote both integration and unit tests using jest and react testing library.
-
-• Deployed frontend application to staging using Jenkins
-
 ### Freelancer –Self Employed
 
 ### May 2020-present
@@ -110,11 +92,3 @@ I am always striving to find new and more effective ways to solve problems. I en
 • PostresSql
 
 • MongoDB
-
-### Bashir Sowedi
-
-Davis and Shirtliff
-
-DevOps
-
-+254705047794
